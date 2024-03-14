@@ -5,4 +5,6 @@
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_sgq04eH0Ee6sK8gxbW5m_w" login="deepak@qlik.com" firstName="Deepak" lastName="M" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_tjBpwOH0Ee6sK8gxbW5m_w" login="deepak_dm@qlik.com" firstName="Deepak" lastName="M" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_AP670OH3Ee6ilNAKM5u3Mg" login="designer@qlik.com" firstName="Designer" lastName="S" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_AP670eH3Ee6ilNAKM5u3Mg" login="dquser@qlik.com" firstName="dquser" lastName="-1" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
