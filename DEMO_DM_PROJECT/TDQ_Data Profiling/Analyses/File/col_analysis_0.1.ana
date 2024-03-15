@@ -1,13 +1,1514 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_Y_x-MOKvEe6ilNAKM5u3Mg" name="col_analysis" creationDate="2024-03-15T15:05:40.948+0530">
-  <taggedValue xmi:id="_Y_x-MeKvEe6ilNAKM5u3Mg" tag="Status" value="development"/>
-  <taggedValue xmi:id="_Y_x-MuKvEe6ilNAKM5u3Mg" tag="Author" value="deepak_dm@qlik.com"/>
-  <taggedValue xmi:id="_Y_x-M-KvEe6ilNAKM5u3Mg" tag="Purpose"/>
-  <taggedValue xmi:id="_Y_x-NOKvEe6ilNAKM5u3Mg" tag="Description"/>
-  <taggedValue xmi:id="_Y_x-NeKvEe6ilNAKM5u3Mg" tag="Version" value="0.1"/>
-  <context xmi:id="_Y_x-NuKvEe6ilNAKM5u3Mg"/>
-  <results xmi:id="_Y_x-N-KvEe6ilNAKM5u3Mg">
-    <resultMetadata xmi:id="_Y_x-OOKvEe6ilNAKM5u3Mg"/>
-  </results>
-  <parameters xmi:id="_Y_x-OeKvEe6ilNAKM5u3Mg" analysisType="Multiple Column Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_Y_x-MOKvEe6ilNAKM5u3Mg" name="col_analysis" creationDate="2024-03-15T15:05:40.948+0530" defaultContext="Default">
+    <clientDependency href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_lzbP0OKvEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/address/BE_Code_postal_0.1.pattern#_WK0GyOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/address/DE_Postleitzahl__postal_code__0.1.pattern#_WK-e2OKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/address/FR_Code_postal_0.1.pattern#_WLGaqOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/address/Postal_code_or_Pin_code_of_India_0.1.pattern#_WLOWeOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/address/FR_Insee_Code_0.1.pattern#_WLW5UOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/address/Swiss_Zip_Code_validation_0.1.pattern#_WLe1KOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/address/US_State_Codes_0.1.pattern#_WLn_GOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/address/US_Zipcode_Validation_0.1.pattern#_WLwh-OKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/address/Valid_UK_Post_Codes_Upper_and_Lower_Case_0.1.pattern#_WL4dyOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/color/Hex_Color_Codes_0.1.pattern#_WMAZmOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/currency/EN_Amount_Money_0.1.pattern#_WMLYuOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/currency/FR_Amount_Money_0.1.pattern#_WMWX2OKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/customer/Bulgaria_Vat_Number_0.1.pattern#_WMeTqOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/customer/Gender_0.1.pattern#_WMoEoOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/date/24_Hour_Time_0.1.pattern#_WMxOmOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/date/EN_Month_0.1.pattern#_WM80wOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/date/Month_0.1.pattern#_WNEwkOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/internet/Email_Address_0.1.pattern#_WNMFVOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/date/ISO_Date_0.1.pattern#_WNXrgOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/date/EN_Month_Abbrev_0.1.pattern#_WNjRsOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/customer/French_VATNumber_0.1.pattern#_WTAZcOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/customer/SEDOL_0.1.pattern#_WTs9AOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/date/Current_Century_Date_0.1.pattern#_WUVPIOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/internet/IP_Address_0.1.pattern#_WVshEOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/internet/IPv6_Address_0.1.pattern#_WWBRMOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/internet/MAC_Address_0.1.pattern#_WWTlEOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/American_Express_Card_Number_0.1.pattern#_WWhAcOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/Bank_Routing_Transit_Number__RTN__0.1.pattern#_WWub0OKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/Contains_numbers_0.1.pattern#_WW7QIOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/FR_SSN_0.1.pattern#_WXGPQOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/GPS_Coordinate_0.1.pattern#_WXR1cOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/ISBN_13_Checker_0.1.pattern#_WXeCsOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/ISBN_Checker_0.1.pattern#_WXpB0OKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/International_Passport_0.1.pattern#_WX3EQOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/Istat_Code_0.1.pattern#_WYDRgOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/Longitude_Validation_0.1.pattern#_WYQs4OKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/Master_Card_Number_0.1.pattern#_WYevUOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/Non_Zero_1st_Digit_0.1.pattern#_WYsKsOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/Numeric_0.1.pattern#_WY-ekOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/UK_SSN_0.1.pattern#_WZQycOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/UK_Vehicle_Registration_Plate_Number_Plate_0.1.pattern#_WZgDAOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/number/US_SSN_0.1.pattern#_WZyW4OKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/phone/FR_Phone_Number_0.1.pattern#_WaAZUOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/phone/FR_Phone_Number__Local_or_International___0.1.pattern#_WaPp4OKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/phone/International_phone_number_0.1.pattern#_WabQEOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/phone/Mobile_number_of_India_0.1.pattern#_Wam2QOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/phone/Phone_Brazil_0.1.pattern#_WazDgOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/phone/Phone_Number_0.1.pattern#_Wa_QwOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/text/Blank_text_0.1.pattern#_WbK28OKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/text/Empty_text_0.1.pattern#_WbaHgOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/text/Home_Row_Text_0.1.pattern#_Wbm70OKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/text/Linux_Path_Verify_0.1.pattern#_WbyiAOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/text/No_special_chart_0.1.pattern#_Wb-vQOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/text/Random_sequence_of_text_0.1.pattern#_WcQcEOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/text/Starts_with_blank_0.1.pattern#_WclzQOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/text/Starts_with_space_0.1.pattern#_Wc4uMOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/text/Starts_with_uppercase_0.1.pattern#_WdDtUOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/text/Uppercased_Single_Word_0.1.pattern#_WdP6kOKwEe6ilNAKM5u3Mg"/>
+    <taggedValue xmi:id="_Y_x-MeKvEe6ilNAKM5u3Mg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_Y_x-MuKvEe6ilNAKM5u3Mg" tag="Author" value="deepak_dm@qlik.com"/>
+    <taggedValue xmi:id="_Y_x-M-KvEe6ilNAKM5u3Mg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_Y_x-NOKvEe6ilNAKM5u3Mg" tag="Description" value=""/>
+    <taggedValue xmi:id="_Y_x-NeKvEe6ilNAKM5u3Mg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_lzaoweKvEe6ilNAKM5u3Mg" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_lzaowuKvEe6ilNAKM5u3Mg" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_lzaow-KvEe6ilNAKM5u3Mg" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_lzbP1uKvEe6ilNAKM5u3Mg" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_Y_x-NuKvEe6ilNAKM5u3Mg">
+      <connection href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR4OKvEe6ilNAKM5u3Mg"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+    </context>
+    <results xmi:id="_Y_x-N-KvEe6ilNAKM5u3Mg">
+      <resultMetadata xmi:id="_Y_x-OOKvEe6ilNAKM5u3Mg"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_WBRwQOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwQeKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_WBRwQuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwQ-KwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_WBRwROKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwReKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_WBRwRuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwR-KwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_WBRwSOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwSeKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_WBRwSuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwS-KwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_WBRwTOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwTeKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBRwTuKwEe6ilNAKM5u3Mg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_0.1.definition#_ccHq1BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthWithNullIndicator" xmi:id="_WBRwT-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwUOKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBRwUeKwEe6ilNAKM5u3Mg" useBlank="false" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Null_0.1.definition#_a4KsoI1qEd-xwI2imLgHRA"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthWithBlankIndicator" xmi:id="_WBRwUuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwU-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBRwVOKwEe6ilNAKM5u3Mg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_0.1.definition#_G4EzQZU9Ed-Y15ulK_jijQ"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_WBRwVeKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwVuKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBRwV-KwEe6ilNAKM5u3Mg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_0.1.definition#_ccHq1RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthWithBlankNullIndicator" xmi:id="_WBRwWOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwWeKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBRwWuKwEe6ilNAKM5u3Mg" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_and_Null_0.1.definition#_9HDjMJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthWithNullIndicator" xmi:id="_WBRwW-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwXOKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBRwXeKwEe6ilNAKM5u3Mg" useBlank="false" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Null_0.1.definition#_-_UFUJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthWithBlankIndicator" xmi:id="_WBRwXuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwX-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBRwYOKwEe6ilNAKM5u3Mg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_0.1.definition#_-xmZcJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AverageLengthIndicator" xmi:id="_WBRwYeKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwYuKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBRwY-KwEe6ilNAKM5u3Mg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_0.1.definition#_ccIR4BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthWithBlankNullIndicator" xmi:id="_WBRwZOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwZeKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBRwZuKwEe6ilNAKM5u3Mg" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_and_Null_0.1.definition#_-hzp8JSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithNullIndicator" xmi:id="_WBRwZ-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwaOKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBRwaeKwEe6ilNAKM5u3Mg" useBlank="false" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Null_0.1.definition#__vI_wJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithBlankIndicator" xmi:id="_WBRwauKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwa-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBRwbOKwEe6ilNAKM5u3Mg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_0.1.definition#__gPoIJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithBlankNullIndicator" xmi:id="_WBRwbeKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBRwbuKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBRwb-KwEe6ilNAKM5u3Mg" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_and_Null_0.1.definition#__TbUIJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SoundexFreqIndicator" xmi:id="_WBX24OKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX24eKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Frequency_Table_0.1.definition#_VGep4Pa7Ed24-N3PsP_o-w"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SoundexLowFreqIndicator" xmi:id="_WBX24uKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX24-KwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Low_Frequency_Table_0.1.definition#_AjKIEPbBEd24-N3PsP_o-w"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX25OKwEe6ilNAKM5u3Mg" name="BE Code postal">
+        <parameters xmi:id="_WBX25eKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX25uKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/BE_Code_postal_0.1.pattern#_NwUnsD4LEd20H7qFpzB9dg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX25-KwEe6ilNAKM5u3Mg" name="DE Postleitzahl (postal code)">
+        <parameters xmi:id="_WBX26OKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX26eKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/DE_Postleitzahl__postal_code__0.1.pattern#_rK7EgD4LEd20H7qFpzB9dg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX26uKwEe6ilNAKM5u3Mg" name="FR Code postal">
+        <parameters xmi:id="_WBX26-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX27OKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/FR_Code_postal_0.1.pattern#_EJ_moD4LEd20H7qFpzB9dg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX27eKwEe6ilNAKM5u3Mg" name="Postal code or Pin code of India">
+        <parameters xmi:id="_WBX27uKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX27-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/Postal_code_or_Pin_code_of_India_0.1.pattern#_Ego7UIygEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX28OKwEe6ilNAKM5u3Mg" name="FR Insee Code">
+        <parameters xmi:id="_WBX28eKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX28uKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/FR_Insee_Code_0.1.pattern#_wXkbQEChEeWDcpMk51Q9_w"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX28-KwEe6ilNAKM5u3Mg" name="Swiss Zip Code validation">
+        <parameters xmi:id="_WBX29OKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX29eKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/Swiss_Zip_Code_validation_0.1.pattern#__GBswIyfEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX29uKwEe6ilNAKM5u3Mg" name="US State Codes">
+        <parameters xmi:id="_WBX29-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX2-OKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/US_State_Codes_0.1.pattern#_pWgP8LkgEeSVYtNTxh_-xg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX2-eKwEe6ilNAKM5u3Mg" name="US Zipcode Validation">
+        <parameters xmi:id="_WBX2-uKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX2--KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/US_Zipcode_Validation_0.1.pattern#_n2tqUIybEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX2_OKwEe6ilNAKM5u3Mg" name="Valid UK Post Codes Upper and Lower Case">
+        <parameters xmi:id="_WBX2_eKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX2_uKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/Valid_UK_Post_Codes_Upper_and_Lower_Case_0.1.pattern#_fi29wIybEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX2_-KwEe6ilNAKM5u3Mg" name="Hex Color Codes">
+        <parameters xmi:id="_WBX3AOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3AeKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/color/Hex_Color_Codes_0.1.pattern#_ly9QgcBQEd2Zap05uF3mKA"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3AuKwEe6ilNAKM5u3Mg" name="EN Amount Money">
+        <parameters xmi:id="_WBX3A-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3BOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/currency/EN_Amount_Money_0.1.pattern#_TTN-cEClEeWDcpMk51Q9_w"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3BeKwEe6ilNAKM5u3Mg" name="FR Amount Money">
+        <parameters xmi:id="_WBX3BuKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3B-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/currency/FR_Amount_Money_0.1.pattern#_MKEKcEClEeWDcpMk51Q9_w"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3COKwEe6ilNAKM5u3Mg" name="Bulgaria Vat Number">
+        <parameters xmi:id="_WBX3CeKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3CuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/customer/Bulgaria_Vat_Number_0.1.pattern#_b95-YIydEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3C-KwEe6ilNAKM5u3Mg" name="Gender">
+        <parameters xmi:id="_WBX3DOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3DeKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/customer/Gender_0.1.pattern#_TXHDQceCEd2zV_ZhgRMOzA"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3DuKwEe6ilNAKM5u3Mg" name="24 Hour Time">
+        <parameters xmi:id="_WBX3D-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3EOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/date/24_Hour_Time_0.1.pattern#_nj3TsD4KEd20H7qFpzB9dg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3EeKwEe6ilNAKM5u3Mg" name="EN Month">
+        <parameters xmi:id="_WBX3EuKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3E-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/date/EN_Month_0.1.pattern#_cfceoEC_EeWBxNQvuPBQ-Q"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3FOKwEe6ilNAKM5u3Mg" name="Month">
+        <parameters xmi:id="_WBX3FeKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3FuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/date/Month_0.1.pattern#_ZNaNsD4ZEd24WPpU35gV1A"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3F-KwEe6ilNAKM5u3Mg" name="Email Address">
+        <parameters xmi:id="_WBX3GOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3GeKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/internet/Email_Address_0.1.pattern#_rC5TcD4XEd24WPpU35gV1A"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3GuKwEe6ilNAKM5u3Mg" name="ISO Date">
+        <parameters xmi:id="_WBX3G-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3HOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/date/ISO_Date_0.1.pattern#_M4zogD4ZEd24WPpU35gV1A"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3HeKwEe6ilNAKM5u3Mg" name="EN Month Abbrev">
+        <parameters xmi:id="_WBX3HuKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3H-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/date/EN_Month_Abbrev_0.1.pattern#_T8ZfgEC_EeWBxNQvuPBQ-Q"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_WBX3IOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3IeKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_WBX3IuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3I-KwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_WBX3JOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3JeKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_WBX3JuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3J-KwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_WBX3KOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3KeKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_WBX3KuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3K-KwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_WBX3LOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3LeKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3LuKwEe6ilNAKM5u3Mg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_0.1.definition#_ccHq1BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthWithNullIndicator" xmi:id="_WBX3L-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3MOKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3MeKwEe6ilNAKM5u3Mg" useBlank="false" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Null_0.1.definition#_a4KsoI1qEd-xwI2imLgHRA"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthWithBlankIndicator" xmi:id="_WBX3MuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3M-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3NOKwEe6ilNAKM5u3Mg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_0.1.definition#_G4EzQZU9Ed-Y15ulK_jijQ"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_WBX3NeKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3NuKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3N-KwEe6ilNAKM5u3Mg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_0.1.definition#_ccHq1RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthWithBlankNullIndicator" xmi:id="_WBX3OOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3OeKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3OuKwEe6ilNAKM5u3Mg" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_and_Null_0.1.definition#_9HDjMJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthWithNullIndicator" xmi:id="_WBX3O-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3POKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3PeKwEe6ilNAKM5u3Mg" useBlank="false" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Null_0.1.definition#_-_UFUJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthWithBlankIndicator" xmi:id="_WBX3PuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3P-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3QOKwEe6ilNAKM5u3Mg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_0.1.definition#_-xmZcJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AverageLengthIndicator" xmi:id="_WBX3QeKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3QuKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3Q-KwEe6ilNAKM5u3Mg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_0.1.definition#_ccIR4BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthWithBlankNullIndicator" xmi:id="_WBX3ROKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3ReKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3RuKwEe6ilNAKM5u3Mg" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_and_Null_0.1.definition#_-hzp8JSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithNullIndicator" xmi:id="_WBX3R-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3SOKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3SeKwEe6ilNAKM5u3Mg" useBlank="false" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Null_0.1.definition#__vI_wJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithBlankIndicator" xmi:id="_WBX3SuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3S-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3TOKwEe6ilNAKM5u3Mg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_0.1.definition#__gPoIJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithBlankNullIndicator" xmi:id="_WBX3TeKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3TuKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3T-KwEe6ilNAKM5u3Mg" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_and_Null_0.1.definition#__TbUIJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SoundexFreqIndicator" xmi:id="_WBX3UOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3UeKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Frequency_Table_0.1.definition#_VGep4Pa7Ed24-N3PsP_o-w"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SoundexLowFreqIndicator" xmi:id="_WBX3UuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3U-KwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Low_Frequency_Table_0.1.definition#_AjKIEPbBEd24-N3PsP_o-w"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3VOKwEe6ilNAKM5u3Mg" name="BE Code postal">
+        <parameters xmi:id="_WBX3VeKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3VuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/BE_Code_postal_0.1.pattern#_NwUnsD4LEd20H7qFpzB9dg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3V-KwEe6ilNAKM5u3Mg" name="FR Code postal">
+        <parameters xmi:id="_WBX3WOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3WeKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/FR_Code_postal_0.1.pattern#_EJ_moD4LEd20H7qFpzB9dg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3WuKwEe6ilNAKM5u3Mg" name="DE Postleitzahl (postal code)">
+        <parameters xmi:id="_WBX3W-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3XOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/DE_Postleitzahl__postal_code__0.1.pattern#_rK7EgD4LEd20H7qFpzB9dg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3XeKwEe6ilNAKM5u3Mg" name="FR Insee Code">
+        <parameters xmi:id="_WBX3XuKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3X-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/FR_Insee_Code_0.1.pattern#_wXkbQEChEeWDcpMk51Q9_w"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3YOKwEe6ilNAKM5u3Mg" name="US State Codes">
+        <parameters xmi:id="_WBX3YeKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3YuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/US_State_Codes_0.1.pattern#_pWgP8LkgEeSVYtNTxh_-xg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3Y-KwEe6ilNAKM5u3Mg" name="Swiss Zip Code validation">
+        <parameters xmi:id="_WBX3ZOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3ZeKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/Swiss_Zip_Code_validation_0.1.pattern#__GBswIyfEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3ZuKwEe6ilNAKM5u3Mg" name="Postal code or Pin code of India">
+        <parameters xmi:id="_WBX3Z-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3aOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/Postal_code_or_Pin_code_of_India_0.1.pattern#_Ego7UIygEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3aeKwEe6ilNAKM5u3Mg" name="US Zipcode Validation">
+        <parameters xmi:id="_WBX3auKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3a-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/US_Zipcode_Validation_0.1.pattern#_n2tqUIybEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3bOKwEe6ilNAKM5u3Mg" name="Valid UK Post Codes Upper and Lower Case">
+        <parameters xmi:id="_WBX3beKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3buKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/Valid_UK_Post_Codes_Upper_and_Lower_Case_0.1.pattern#_fi29wIybEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR5-KvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_WBX3b-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3cOKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_WBX3ceKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3cuKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_WBX3c-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3dOKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_WBX3deKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3duKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_WBX3d-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3eOKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_WBX3eeKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3euKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_WBX3e-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3fOKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3feKwEe6ilNAKM5u3Mg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_0.1.definition#_ccHq1BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthWithNullIndicator" xmi:id="_WBX3fuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3f-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3gOKwEe6ilNAKM5u3Mg" useBlank="false" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Null_0.1.definition#_a4KsoI1qEd-xwI2imLgHRA"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthWithBlankIndicator" xmi:id="_WBX3geKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3guKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3g-KwEe6ilNAKM5u3Mg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_0.1.definition#_G4EzQZU9Ed-Y15ulK_jijQ"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_WBX3hOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3heKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3huKwEe6ilNAKM5u3Mg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_0.1.definition#_ccHq1RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthWithBlankNullIndicator" xmi:id="_WBX3h-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3iOKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3ieKwEe6ilNAKM5u3Mg" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_and_Null_0.1.definition#_9HDjMJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthWithNullIndicator" xmi:id="_WBX3iuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3i-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3jOKwEe6ilNAKM5u3Mg" useBlank="false" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Null_0.1.definition#_-_UFUJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthWithBlankIndicator" xmi:id="_WBX3jeKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3juKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3j-KwEe6ilNAKM5u3Mg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_0.1.definition#_-xmZcJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AverageLengthIndicator" xmi:id="_WBX3kOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3keKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3kuKwEe6ilNAKM5u3Mg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_0.1.definition#_ccIR4BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthWithBlankNullIndicator" xmi:id="_WBX3k-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3lOKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3leKwEe6ilNAKM5u3Mg" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_and_Null_0.1.definition#_-hzp8JSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithNullIndicator" xmi:id="_WBX3luKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3l-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3mOKwEe6ilNAKM5u3Mg" useBlank="false" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Null_0.1.definition#__vI_wJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithBlankIndicator" xmi:id="_WBX3meKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3muKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3m-KwEe6ilNAKM5u3Mg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_0.1.definition#__gPoIJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithBlankNullIndicator" xmi:id="_WBX3nOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3neKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3nuKwEe6ilNAKM5u3Mg" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_and_Null_0.1.definition#__TbUIJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SoundexFreqIndicator" xmi:id="_WBX3n-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3oOKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Frequency_Table_0.1.definition#_VGep4Pa7Ed24-N3PsP_o-w"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SoundexLowFreqIndicator" xmi:id="_WBX3oeKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3ouKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Low_Frequency_Table_0.1.definition#_AjKIEPbBEd24-N3PsP_o-w"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBX3o-KwEe6ilNAKM5u3Mg" name="BE Code postal">
+        <parameters xmi:id="_WBX3pOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBX3peKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/BE_Code_postal_0.1.pattern#_NwUnsD4LEd20H7qFpzB9dg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6OKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_WBX3puKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3p-KwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_WBX3qOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3qeKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_WBX3quKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3q-KwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_WBX3rOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3reKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_WBX3ruKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3r-KwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_WBX3sOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3seKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_WBX3suKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3s-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3tOKwEe6ilNAKM5u3Mg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_0.1.definition#_ccHq1BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthWithNullIndicator" xmi:id="_WBX3teKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3tuKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3t-KwEe6ilNAKM5u3Mg" useBlank="false" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Null_0.1.definition#_a4KsoI1qEd-xwI2imLgHRA"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthWithBlankIndicator" xmi:id="_WBX3uOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3ueKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3uuKwEe6ilNAKM5u3Mg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_0.1.definition#_G4EzQZU9Ed-Y15ulK_jijQ"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_WBX3u-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3vOKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3veKwEe6ilNAKM5u3Mg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_0.1.definition#_ccHq1RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthWithBlankNullIndicator" xmi:id="_WBX3vuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3v-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3wOKwEe6ilNAKM5u3Mg" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_and_Null_0.1.definition#_9HDjMJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthWithNullIndicator" xmi:id="_WBX3weKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBX3wuKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBX3w-KwEe6ilNAKM5u3Mg" useBlank="false" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Null_0.1.definition#_-_UFUJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthWithBlankIndicator" xmi:id="_WBX3xOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYd8OKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYd8eKwEe6ilNAKM5u3Mg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_0.1.definition#_-xmZcJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AverageLengthIndicator" xmi:id="_WBYd8uKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYd8-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYd9OKwEe6ilNAKM5u3Mg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_0.1.definition#_ccIR4BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthWithBlankNullIndicator" xmi:id="_WBYd9eKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYd9uKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYd9-KwEe6ilNAKM5u3Mg" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_and_Null_0.1.definition#_-hzp8JSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithNullIndicator" xmi:id="_WBYd-OKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYd-eKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYd-uKwEe6ilNAKM5u3Mg" useBlank="false" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Null_0.1.definition#__vI_wJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithBlankIndicator" xmi:id="_WBYd--KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYd_OKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYd_eKwEe6ilNAKM5u3Mg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_0.1.definition#__gPoIJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithBlankNullIndicator" xmi:id="_WBYd_uKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYd_-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYeAOKwEe6ilNAKM5u3Mg" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_and_Null_0.1.definition#__TbUIJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SoundexFreqIndicator" xmi:id="_WBYeAeKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeAuKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Frequency_Table_0.1.definition#_VGep4Pa7Ed24-N3PsP_o-w"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SoundexLowFreqIndicator" xmi:id="_WBYeA-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeBOKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Low_Frequency_Table_0.1.definition#_AjKIEPbBEd24-N3PsP_o-w"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeBeKwEe6ilNAKM5u3Mg" name="BE Code postal">
+        <parameters xmi:id="_WBYeBuKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeB-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/BE_Code_postal_0.1.pattern#_NwUnsD4LEd20H7qFpzB9dg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6uKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_WBYeCOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeCeKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_WBYeCuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeC-KwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_WBYeDOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeDeKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_WBYeDuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeD-KwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_WBYeEOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeEeKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_WBYeEuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeE-KwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_WBYeFOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeFeKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYeFuKwEe6ilNAKM5u3Mg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_0.1.definition#_ccHq1BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthWithNullIndicator" xmi:id="_WBYeF-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeGOKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYeGeKwEe6ilNAKM5u3Mg" useBlank="false" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Null_0.1.definition#_a4KsoI1qEd-xwI2imLgHRA"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthWithBlankIndicator" xmi:id="_WBYeGuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeG-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYeHOKwEe6ilNAKM5u3Mg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_0.1.definition#_G4EzQZU9Ed-Y15ulK_jijQ"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_WBYeHeKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeHuKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYeH-KwEe6ilNAKM5u3Mg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_0.1.definition#_ccHq1RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthWithBlankNullIndicator" xmi:id="_WBYeIOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeIeKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYeIuKwEe6ilNAKM5u3Mg" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_and_Null_0.1.definition#_9HDjMJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthWithNullIndicator" xmi:id="_WBYeI-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeJOKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYeJeKwEe6ilNAKM5u3Mg" useBlank="false" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Null_0.1.definition#_-_UFUJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthWithBlankIndicator" xmi:id="_WBYeJuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeJ-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYeKOKwEe6ilNAKM5u3Mg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_0.1.definition#_-xmZcJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AverageLengthIndicator" xmi:id="_WBYeKeKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeKuKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYeK-KwEe6ilNAKM5u3Mg" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_0.1.definition#_ccIR4BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MaxLengthWithBlankNullIndicator" xmi:id="_WBYeLOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeLeKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYeLuKwEe6ilNAKM5u3Mg" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_and_Null_0.1.definition#_-hzp8JSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithNullIndicator" xmi:id="_WBYeL-KwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeMOKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYeMeKwEe6ilNAKM5u3Mg" useBlank="false" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Null_0.1.definition#__vI_wJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithBlankIndicator" xmi:id="_WBYeMuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeM-KwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYeNOKwEe6ilNAKM5u3Mg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_0.1.definition#__gPoIJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithBlankNullIndicator" xmi:id="_WBYeNeKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeNuKwEe6ilNAKM5u3Mg">
+          <textParameter xmi:id="_WBYeN-KwEe6ilNAKM5u3Mg" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_and_Null_0.1.definition#__TbUIJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SoundexFreqIndicator" xmi:id="_WBYeOOKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeOeKwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Frequency_Table_0.1.definition#_VGep4Pa7Ed24-N3PsP_o-w"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SoundexLowFreqIndicator" xmi:id="_WBYeOuKwEe6ilNAKM5u3Mg">
+        <parameters xmi:id="_WBYeO-KwEe6ilNAKM5u3Mg"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Low_Frequency_Table_0.1.definition#_AjKIEPbBEd24-N3PsP_o-w"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYePOKwEe6ilNAKM5u3Mg" name="DE Postleitzahl (postal code)">
+        <parameters xmi:id="_WBYePeKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYePuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/DE_Postleitzahl__postal_code__0.1.pattern#_rK7EgD4LEd20H7qFpzB9dg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeP-KwEe6ilNAKM5u3Mg" name="FR Code postal">
+        <parameters xmi:id="_WBYeQOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeQeKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/FR_Code_postal_0.1.pattern#_EJ_moD4LEd20H7qFpzB9dg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeQuKwEe6ilNAKM5u3Mg" name="FR Insee Code">
+        <parameters xmi:id="_WBYeQ-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeROKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/FR_Insee_Code_0.1.pattern#_wXkbQEChEeWDcpMk51Q9_w"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeReKwEe6ilNAKM5u3Mg" name="Postal code or Pin code of India">
+        <parameters xmi:id="_WBYeRuKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeR-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/Postal_code_or_Pin_code_of_India_0.1.pattern#_Ego7UIygEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeSOKwEe6ilNAKM5u3Mg" name="Swiss Zip Code validation">
+        <parameters xmi:id="_WBYeSeKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeSuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/Swiss_Zip_Code_validation_0.1.pattern#__GBswIyfEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeS-KwEe6ilNAKM5u3Mg" name="US State Codes">
+        <parameters xmi:id="_WBYeTOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeTeKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/US_State_Codes_0.1.pattern#_pWgP8LkgEeSVYtNTxh_-xg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeTuKwEe6ilNAKM5u3Mg" name="US Zipcode Validation">
+        <parameters xmi:id="_WBYeT-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeUOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/US_Zipcode_Validation_0.1.pattern#_n2tqUIybEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeUeKwEe6ilNAKM5u3Mg" name="Valid UK Post Codes Upper and Lower Case">
+        <parameters xmi:id="_WBYeUuKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeU-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/Valid_UK_Post_Codes_Upper_and_Lower_Case_0.1.pattern#_fi29wIybEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeVOKwEe6ilNAKM5u3Mg" name="Hex Color Codes">
+        <parameters xmi:id="_WBYeVeKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeVuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/color/Hex_Color_Codes_0.1.pattern#_ly9QgcBQEd2Zap05uF3mKA"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeV-KwEe6ilNAKM5u3Mg" name="EN Amount Money">
+        <parameters xmi:id="_WBYeWOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeWeKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/currency/EN_Amount_Money_0.1.pattern#_TTN-cEClEeWDcpMk51Q9_w"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeWuKwEe6ilNAKM5u3Mg" name="FR Amount Money">
+        <parameters xmi:id="_WBYeW-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeXOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/currency/FR_Amount_Money_0.1.pattern#_MKEKcEClEeWDcpMk51Q9_w"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeXeKwEe6ilNAKM5u3Mg" name="Bulgaria Vat Number">
+        <parameters xmi:id="_WBYeXuKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeX-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/customer/Bulgaria_Vat_Number_0.1.pattern#_b95-YIydEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeYOKwEe6ilNAKM5u3Mg" name="French VATNumber">
+        <parameters xmi:id="_WBYeYeKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeYuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/customer/French_VATNumber_0.1.pattern#_ga6fofbIEd2c5L1gaJyUtQ"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeY-KwEe6ilNAKM5u3Mg" name="Gender">
+        <parameters xmi:id="_WBYeZOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeZeKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/customer/Gender_0.1.pattern#_TXHDQceCEd2zV_ZhgRMOzA"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeZuKwEe6ilNAKM5u3Mg" name="SEDOL">
+        <parameters xmi:id="_WBYeZ-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeaOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/customer/SEDOL_0.1.pattern#_u--T0EClEeWDcpMk51Q9_w"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeaeKwEe6ilNAKM5u3Mg" name="24 Hour Time">
+        <parameters xmi:id="_WBYeauKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYea-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/date/24_Hour_Time_0.1.pattern#_nj3TsD4KEd20H7qFpzB9dg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYebOKwEe6ilNAKM5u3Mg" name="Current Century Date">
+        <parameters xmi:id="_WBYebeKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYebuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/date/Current_Century_Date_0.1.pattern#_khsAgIyhEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeb-KwEe6ilNAKM5u3Mg" name="EN Month">
+        <parameters xmi:id="_WBYecOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeceKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/date/EN_Month_0.1.pattern#_cfceoEC_EeWBxNQvuPBQ-Q"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYecuKwEe6ilNAKM5u3Mg" name="EN Month Abbrev">
+        <parameters xmi:id="_WBYec-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYedOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/date/EN_Month_Abbrev_0.1.pattern#_T8ZfgEC_EeWBxNQvuPBQ-Q"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYedeKwEe6ilNAKM5u3Mg" name="ISO Date">
+        <parameters xmi:id="_WBYeduKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYed-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/date/ISO_Date_0.1.pattern#_M4zogD4ZEd24WPpU35gV1A"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeeOKwEe6ilNAKM5u3Mg" name="Month">
+        <parameters xmi:id="_WBYeeeKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeeuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/date/Month_0.1.pattern#_ZNaNsD4ZEd24WPpU35gV1A"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYee-KwEe6ilNAKM5u3Mg" name="Email Address">
+        <parameters xmi:id="_WBYefOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYefeKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/internet/Email_Address_0.1.pattern#_rC5TcD4XEd24WPpU35gV1A"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYefuKwEe6ilNAKM5u3Mg" name="IP Address">
+        <parameters xmi:id="_WBYef-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYegOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/internet/IP_Address_0.1.pattern#_pOs9MAyEEd6OfvNiP9lrnQ"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYegeKwEe6ilNAKM5u3Mg" name="IPv6 Address">
+        <parameters xmi:id="_WBYeguKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeg-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/internet/IPv6_Address_0.1.pattern#_IVLZAECkEeWDcpMk51Q9_w"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYehOKwEe6ilNAKM5u3Mg" name="MAC Address">
+        <parameters xmi:id="_WBYeheKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYehuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/internet/MAC_Address_0.1.pattern#_xVVjsECkEeWDcpMk51Q9_w"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeh-KwEe6ilNAKM5u3Mg" name="American Express Card Number">
+        <parameters xmi:id="_WBYeiOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeieKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/American_Express_Card_Number_0.1.pattern#_FcDG0D17Ed2p44yVAaDvbQ"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeiuKwEe6ilNAKM5u3Mg" name="Bank Routing Transit Number (RTN)">
+        <parameters xmi:id="_WBYei-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYejOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/Bank_Routing_Transit_Number__RTN__0.1.pattern#_j5FFMIydEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYejeKwEe6ilNAKM5u3Mg" name="Contains numbers">
+        <parameters xmi:id="_WBYejuKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYej-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/Contains_numbers_0.1.pattern#_Lnh0kGUuEd2RuP05jDphQg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYekOKwEe6ilNAKM5u3Mg" name="FR SSN">
+        <parameters xmi:id="_WBYekeKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYekuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/FR_SSN_0.1.pattern#_OuO-UPbPEd2c5L1gaJyUtQ"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYek-KwEe6ilNAKM5u3Mg" name="GPS Coordinate">
+        <parameters xmi:id="_WBYelOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeleKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/GPS_Coordinate_0.1.pattern#_Xaq7AECwEeWDcpMk51Q9_w"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeluKwEe6ilNAKM5u3Mg" name="ISBN 13 Checker">
+        <parameters xmi:id="_WBYel-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYemOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/ISBN_13_Checker_0.1.pattern#_C9oU8GaVEeWlkevoEbik2g"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYemeKwEe6ilNAKM5u3Mg" name="ISBN Checker">
+        <parameters xmi:id="_WBYemuKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYem-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/ISBN_Checker_0.1.pattern#_WGxL4IydEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYenOKwEe6ilNAKM5u3Mg" name="International Passport">
+        <parameters xmi:id="_WBYeneKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYenuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/International_Passport_0.1.pattern#_PRL0IIydEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYen-KwEe6ilNAKM5u3Mg" name="Istat Code">
+        <parameters xmi:id="_WBYeoOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeoeKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/Istat_Code_0.1.pattern#_ZYFdkIybEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeouKwEe6ilNAKM5u3Mg" name="Longitude Validation">
+        <parameters xmi:id="_WBYeo-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYepOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/Longitude_Validation_0.1.pattern#_CwBEgIybEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYepeKwEe6ilNAKM5u3Mg" name="Master Card Number">
+        <parameters xmi:id="_WBYepuKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYep-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/Master_Card_Number_0.1.pattern#_6YWv4D16Ed2p44yVAaDvbQ"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeqOKwEe6ilNAKM5u3Mg" name="Non Zero 1st Digit">
+        <parameters xmi:id="_WBYeqeKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYequKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/Non_Zero_1st_Digit_0.1.pattern#_D7IDEAulEeKxJpyXB0egyQ"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeq-KwEe6ilNAKM5u3Mg" name="Numeric">
+        <parameters xmi:id="_WBYerOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYereKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/Numeric_0.1.pattern#_OAAOQD1iEd2irYhnXOOajA"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeruKwEe6ilNAKM5u3Mg" name="UK SSN">
+        <parameters xmi:id="_WBYer-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYesOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/UK_SSN_0.1.pattern#_C2aDMECkEeWDcpMk51Q9_w"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeseKwEe6ilNAKM5u3Mg" name="UK Vehicle Registration Plate Number Plate">
+        <parameters xmi:id="_WBYesuKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYes-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/UK_Vehicle_Registration_Plate_Number_Plate_0.1.pattern#_8U2icIybEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYetOKwEe6ilNAKM5u3Mg" name="US SSN">
+        <parameters xmi:id="_WBYeteKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYetuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/number/US_SSN_0.1.pattern#_BpSRwD15Ed2p44yVAaDvbQ"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYet-KwEe6ilNAKM5u3Mg" name="FR Phone Number">
+        <parameters xmi:id="_WBYeuOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeueKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/phone/FR_Phone_Number_0.1.pattern#_SPiUIPbKEd2c5L1gaJyUtQ"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeuuKwEe6ilNAKM5u3Mg" name="FR Phone Number (Local or International )">
+        <parameters xmi:id="_WBYeu-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYevOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/phone/FR_Phone_Number__Local_or_International___0.1.pattern#_DqoD4IyhEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeveKwEe6ilNAKM5u3Mg" name="International phone number">
+        <parameters xmi:id="_WBYevuKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYev-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/phone/International_phone_number_0.1.pattern#_Is95MIydEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYewOKwEe6ilNAKM5u3Mg" name="Mobile number of India">
+        <parameters xmi:id="_WBYeweKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYewuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/phone/Mobile_number_of_India_0.1.pattern#__RSB4IycEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYew-KwEe6ilNAKM5u3Mg" name="Phone Brazil">
+        <parameters xmi:id="_WBYexOKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYexeKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/phone/Phone_Brazil_0.1.pattern#_mRzFgIycEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYexuKwEe6ilNAKM5u3Mg" name="Phone Number">
+        <parameters xmi:id="_WBYex-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYeyOKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/phone/Phone_Number_0.1.pattern#_S7m6oIyhEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYeyeKwEe6ilNAKM5u3Mg" name="Blank text">
+        <parameters xmi:id="_WBYeyuKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYey-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/text/Blank_text_0.1.pattern#_N7yi0Gk3Ed2I1bT57-sHUw"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYezOKwEe6ilNAKM5u3Mg" name="Empty text">
+        <parameters xmi:id="_WBYezeKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYezuKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/text/Empty_text_0.1.pattern#_vZ6_IGk6Ed2I1bT57-sHUw"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYez-KwEe6ilNAKM5u3Mg" name="Home Row Text">
+        <parameters xmi:id="_WBYe0OKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYe0eKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/text/Home_Row_Text_0.1.pattern#_e4vUoYyZEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYe0uKwEe6ilNAKM5u3Mg" name="Linux Path Verify">
+        <parameters xmi:id="_WBYe0-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYe1OKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/text/Linux_Path_Verify_0.1.pattern#_IqpTEIyfEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYe1eKwEe6ilNAKM5u3Mg" name="No special chart">
+        <parameters xmi:id="_WBYe1uKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYe1-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/text/No_special_chart_0.1.pattern#_6rm3QIycEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYe2OKwEe6ilNAKM5u3Mg" name="Random sequence of text">
+        <parameters xmi:id="_WBYe2eKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYe2uKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/text/Random_sequence_of_text_0.1.pattern#_gDqDcP9eEd2mwaQf90ozSg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYe2-KwEe6ilNAKM5u3Mg" name="Starts with blank">
+        <parameters xmi:id="_WBYe3OKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYe3eKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/text/Starts_with_blank_0.1.pattern#_18GtIIyaEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYe3uKwEe6ilNAKM5u3Mg" name="Starts with space">
+        <parameters xmi:id="_WBYe3-KwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYe4OKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/text/Starts_with_space_0.1.pattern#_scYqYIyaEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYe4eKwEe6ilNAKM5u3Mg" name="Starts with uppercase">
+        <parameters xmi:id="_WBYe4uKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYe4-KwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/text/Starts_with_uppercase_0.1.pattern#_53rX8AMvEeKk6OZDw5mXOQ"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYe5OKwEe6ilNAKM5u3Mg" name="Uppercased Single Word">
+        <parameters xmi:id="_WBYe5eKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYe5uKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/text/Uppercased_Single_Word_0.1.pattern#_FyTwIHnTEd2weu9skTiCqA"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_WBYe5-KwEe6ilNAKM5u3Mg" name="BE Code postal">
+        <parameters xmi:id="_WBYe6OKwEe6ilNAKM5u3Mg">
+          <dataValidDomain xmi:id="_WBYe6eKwEe6ilNAKM5u3Mg">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/address/BE_Code_postal_0.1.pattern#_NwUnsD4LEd20H7qFpzB9dg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/ff_us_data_0.1.item#_I1pR6eKvEe6ilNAKM5u3Mg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_Y_x-OeKvEe6ilNAKM5u3Mg" dataFilter="_lzbP1-KvEe6ilNAKM5u3Mg" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
+    <contextType xmi:id="_lzaowOKvEe6ilNAKM5u3Mg" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_lzbP1-KvEe6ilNAKM5u3Mg" name="col_analysis">
+    <ranges xmi:id="_lzbP2OKvEe6ilNAKM5u3Mg">
+      <expressions xmi:id="_lzbP2eKvEe6ilNAKM5u3Mg">
+        <expression xsi:type="relational:TdExpression" xmi:id="_lzbP2uKvEe6ilNAKM5u3Mg" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
