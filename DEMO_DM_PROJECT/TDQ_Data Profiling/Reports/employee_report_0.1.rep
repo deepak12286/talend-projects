@@ -34,5 +34,6 @@
   <analysisMap xmi:id="_XbamQuUREe6U_s4xD4dJyA" mustRefresh="true" reportType="Evolution">
     <analysis href="../Analyses/analysis_employee_0.1.ana#_32ZZ8OUIEe6Q39P_LbkQoQ"/>
   </analysisMap>
+  <ExecInformations xmi:id="_m4-ZEOUUEe6U_s4xD4dJyA" executionDate="2024-03-18T16:15:13.180+0530" executionDuration="3525" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
   <context xmi:id="_XbamQOUREe6U_s4xD4dJyA" confirmationNeeded="false" hide="false" name="Default"/>
 </dataquality.reports:TdReport>
