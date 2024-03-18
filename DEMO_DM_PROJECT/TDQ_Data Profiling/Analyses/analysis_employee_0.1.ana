@@ -23,7 +23,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyU-UMEe6Q39P_LbkQoQ"/>
     </context>
     <results xmi:id="_32aBA-UIEe6Q39P_LbkQoQ">
-      <resultMetadata xmi:id="_32aBBOUIEe6Q39P_LbkQoQ" executionDate="2024-03-18T15:59:26.852+0530" executionDuration="790" message="" executionNumber="5" lastRunOk="true" lastExecutionNumberOk="5"/>
+      <resultMetadata xmi:id="_32aBBOUIEe6Q39P_LbkQoQ" executionDate="2024-03-18T16:15:13.183+0530" executionDuration="548" message="" executionNumber="6" lastRunOk="true" lastExecutionNumberOk="6"/>
       <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_NO_LUOUNEe6Q39P_LbkQoQ" name="US Zipcode Validation" count="509" computed="true" matchingValueCount="509">
         <parameters xmi:id="_NO_LUeUNEe6Q39P_LbkQoQ">
           <dataValidDomain xmi:id="_NO_LUuUNEe6Q39P_LbkQoQ">
@@ -170,6 +170,9 @@
     <parameters xmi:id="_32aBBeUIEe6Q39P_LbkQoQ" dataFilter="_NXrNQOUNEe6Q39P_LbkQoQ" analysisType="Multiple Column Analysis"/>
     <contextType xmi:id="_NO99MOUNEe6Q39P_LbkQoQ" confirmationNeeded="false" hide="false" name="Default"/>
   </dataquality.analysis:Analysis>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Xi5HQOUREe6U_s4xD4dJyA" kind="Usage" supplier="_32ZZ8OUIEe6Q39P_LbkQoQ">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/employee_report_0.1.rep#_vMDGsOUNEe6Q39P_LbkQoQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
   <dataquality.domain:Domain xmi:id="_NXrNQOUNEe6Q39P_LbkQoQ" name="analysis_employee">
     <ranges xmi:id="_NXrNQeUNEe6Q39P_LbkQoQ">
       <expressions xmi:id="_NXrNQuUNEe6Q39P_LbkQoQ">
@@ -177,7 +180,4 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Xi5HQOUREe6U_s4xD4dJyA" kind="Usage" supplier="_32ZZ8OUIEe6Q39P_LbkQoQ">
-    <client xsi:type="dataquality.reports:TdReport" href="../Reports/employee_report_0.1.rep#_vMDGsOUNEe6Q39P_LbkQoQ"/>
-  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
