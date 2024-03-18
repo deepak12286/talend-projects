@@ -1,13 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_32ZZ8OUIEe6Q39P_LbkQoQ" name="analysis_employee" creationDate="2024-03-18T14:51:15.805+0530">
-  <taggedValue xmi:id="_32ZZ8eUIEe6Q39P_LbkQoQ" tag="Status" value="development"/>
-  <taggedValue xmi:id="_32ZZ8uUIEe6Q39P_LbkQoQ" tag="Author" value="deepak_dm@qlik.com"/>
-  <taggedValue xmi:id="_32ZZ8-UIEe6Q39P_LbkQoQ" tag="Purpose"/>
-  <taggedValue xmi:id="_32aBAOUIEe6Q39P_LbkQoQ" tag="Description"/>
-  <taggedValue xmi:id="_32aBAeUIEe6Q39P_LbkQoQ" tag="Version" value="0.1"/>
-  <context xmi:id="_32aBAuUIEe6Q39P_LbkQoQ"/>
-  <results xmi:id="_32aBA-UIEe6Q39P_LbkQoQ">
-    <resultMetadata xmi:id="_32aBBOUIEe6Q39P_LbkQoQ"/>
-  </results>
-  <parameters xmi:id="_32aBBeUIEe6Q39P_LbkQoQ" analysisType="Multiple Column Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_32ZZ8OUIEe6Q39P_LbkQoQ" name="analysis_employee" creationDate="2024-03-18T14:51:15.805+0530" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/local_postgres_0.1.item#_NO_yYOUNEe6Q39P_LbkQoQ"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/address/US_Zipcode_Validation_0.1.pattern#_WLwh-OKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/internet/Email_Address_0.1.pattern#_WNMFVOKwEe6ilNAKM5u3Mg"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/address/US_State_Codes_0.1.pattern#_WLn_GOKwEe6ilNAKM5u3Mg"/>
+    <taggedValue xmi:id="_32ZZ8eUIEe6Q39P_LbkQoQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_32ZZ8uUIEe6Q39P_LbkQoQ" tag="Author" value="deepak_dm@qlik.com"/>
+    <taggedValue xmi:id="_32ZZ8-UIEe6Q39P_LbkQoQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_32aBAOUIEe6Q39P_LbkQoQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_32aBAeUIEe6Q39P_LbkQoQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_NO-kQOUNEe6Q39P_LbkQoQ" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_NO-kQeUNEe6Q39P_LbkQoQ" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_NO-kQuUNEe6Q39P_LbkQoQ" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_NPBnkOUNEe6Q39P_LbkQoQ" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_32aBAuUIEe6Q39P_LbkQoQ">
+      <connection href="../../metadata/connections/local_postgres_0.1.item#_xjbxoOUJEe6Q39P_LbkQoQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fya-UMEe6Q39P_LbkQoQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyd-UMEe6Q39P_LbkQoQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyZ-UMEe6Q39P_LbkQoQ"/>
+    </context>
+    <results xmi:id="_32aBA-UIEe6Q39P_LbkQoQ">
+      <resultMetadata xmi:id="_32aBBOUIEe6Q39P_LbkQoQ"/>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_NO_LUOUNEe6Q39P_LbkQoQ" name="US Zipcode Validation">
+        <parameters xmi:id="_NO_LUeUNEe6Q39P_LbkQoQ">
+          <dataValidDomain xmi:id="_NO_LUuUNEe6Q39P_LbkQoQ">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/address/US_Zipcode_Validation_0.1.pattern#_n2tqUIybEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fya-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_NO_yYuUNEe6Q39P_LbkQoQ" name="Email Address">
+        <parameters xmi:id="_NO_yY-UNEe6Q39P_LbkQoQ">
+          <dataValidDomain xmi:id="_NO_yZOUNEe6Q39P_LbkQoQ">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/internet/Email_Address_0.1.pattern#_rC5TcD4XEd24WPpU35gV1A"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyd-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_NO_yZuUNEe6Q39P_LbkQoQ" name="US State Codes">
+        <parameters xmi:id="_NO_yZ-UNEe6Q39P_LbkQoQ">
+          <dataValidDomain xmi:id="_NO_yaOUNEe6Q39P_LbkQoQ">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/address/US_State_Codes_0.1.pattern#_pWgP8LkgEeSVYtNTxh_-xg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyZ-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_32aBBeUIEe6Q39P_LbkQoQ" dataFilter="_NXrNQOUNEe6Q39P_LbkQoQ" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_NO99MOUNEe6Q39P_LbkQoQ" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_NXrNQOUNEe6Q39P_LbkQoQ" name="analysis_employee">
+    <ranges xmi:id="_NXrNQeUNEe6Q39P_LbkQoQ">
+      <expressions xmi:id="_NXrNQuUNEe6Q39P_LbkQoQ">
+        <expression xsi:type="relational:TdExpression" xmi:id="_NXrNQ-UNEe6Q39P_LbkQoQ" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
