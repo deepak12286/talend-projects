@@ -21,8 +21,38 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyZ-UMEe6Q39P_LbkQoQ"/>
     </context>
     <results xmi:id="_32aBA-UIEe6Q39P_LbkQoQ">
-      <resultMetadata xmi:id="_32aBBOUIEe6Q39P_LbkQoQ"/>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_NO_LUOUNEe6Q39P_LbkQoQ" name="US Zipcode Validation">
+      <resultMetadata xmi:id="_32aBBOUIEe6Q39P_LbkQoQ" executionDate="2024-03-18T15:22:23.966+0530" executionDuration="649" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_VlNPYOUNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlNPYeUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fya-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_VlNPYuUNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPEkOUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fya-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_VlPEkeUNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPEkuUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fya-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_VlPEk-UNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPElOUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fya-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_VlPEleUNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPEluUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fya-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_VlPEl-UNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPEmOUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fya-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_NO_LUOUNEe6Q39P_LbkQoQ" name="US Zipcode Validation" count="509" computed="true" matchingValueCount="509">
         <parameters xmi:id="_NO_LUeUNEe6Q39P_LbkQoQ">
           <dataValidDomain xmi:id="_NO_LUuUNEe6Q39P_LbkQoQ">
             <patterns href="../../TDQ_Libraries/Patterns/Regex/address/US_Zipcode_Validation_0.1.pattern#_n2tqUIybEd6Dle_8xC0lwg"/>
@@ -30,8 +60,39 @@
         </parameters>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fya-UMEe6Q39P_LbkQoQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_OHaoIOUNEe6Q39P_LbkQoQ" body="SELECT COUNT(CASE WHEN cast(&quot;zip&quot; as VARCHAR) ~ '^[0-9]{5}$' THEN 1 END), COUNT(*) FROM &quot;public&quot;.&quot;employee&quot; " language="PostgreSQL"/>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_NO_yYuUNEe6Q39P_LbkQoQ" name="Email Address">
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_VlPEmeUNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPEmuUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyd-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_VlPEm-UNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPEnOUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyd-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_VlPEneUNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPEnuUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyd-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_VlPEn-UNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPEoOUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyd-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_VlPEoeUNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPEouUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyd-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_VlPEo-UNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPEpOUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyd-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_NO_yYuUNEe6Q39P_LbkQoQ" name="Email Address" count="509" computed="true" matchingValueCount="509">
         <parameters xmi:id="_NO_yY-UNEe6Q39P_LbkQoQ">
           <dataValidDomain xmi:id="_NO_yZOUNEe6Q39P_LbkQoQ">
             <patterns href="../../TDQ_Libraries/Patterns/Regex/internet/Email_Address_0.1.pattern#_rC5TcD4XEd24WPpU35gV1A"/>
@@ -39,8 +100,39 @@
         </parameters>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyd-UMEe6Q39P_LbkQoQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_OHaoIeUNEe6Q39P_LbkQoQ" body="SELECT COUNT(CASE WHEN cast(&quot;email&quot; as VARCHAR) ~ '^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$' THEN 1 END), COUNT(*) FROM &quot;public&quot;.&quot;employee&quot; " language="PostgreSQL"/>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_NO_yZuUNEe6Q39P_LbkQoQ" name="US State Codes">
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_VlPEpeUNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPEpuUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyZ-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_VlPEp-UNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPEqOUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyZ-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_VlPEqeUNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPEquUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyZ-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_VlPEq-UNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPErOUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyZ-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_VlPEreUNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPEruUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyZ-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_VlPEr-UNEe6Q39P_LbkQoQ">
+        <parameters xmi:id="_VlPEsOUNEe6Q39P_LbkQoQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyZ-UMEe6Q39P_LbkQoQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_NO_yZuUNEe6Q39P_LbkQoQ" name="US State Codes" count="509" computed="true" matchingValueCount="508" notMatchingValueCount="1">
         <parameters xmi:id="_NO_yZ-UNEe6Q39P_LbkQoQ">
           <dataValidDomain xmi:id="_NO_yaOUNEe6Q39P_LbkQoQ">
             <patterns href="../../TDQ_Libraries/Patterns/Regex/address/US_State_Codes_0.1.pattern#_pWgP8LkgEeSVYtNTxh_-xg"/>
@@ -48,6 +140,7 @@
         </parameters>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres_0.1.item#_v_fyZ-UMEe6Q39P_LbkQoQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_OHaoIuUNEe6Q39P_LbkQoQ" body="SELECT COUNT(CASE WHEN cast(&quot;state&quot; as VARCHAR) ~ '^(A[KLRZ]|C[AOT]|DE|FL|GA|HI|I[ADLN]|K[SY]|LA|M[ADEINOST]|N[CDEHJMVY]|O[HKR]|PA|RI|S[CD]|T[NX]|UT|V[AT]|W[AIVY])$' THEN 1 END), COUNT(*) FROM &quot;public&quot;.&quot;employee&quot; " language="PostgreSQL"/>
       </indicators>
     </results>
     <parameters xmi:id="_32aBBeUIEe6Q39P_LbkQoQ" dataFilter="_NXrNQOUNEe6Q39P_LbkQoQ" analysisType="Multiple Column Analysis"/>
