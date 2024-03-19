@@ -1,18 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_nIyyIOXiEe63ns-usOBecA" name="match analysis" creationDate="2024-03-19T16:49:53.788+0530">
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_nIyyIOXiEe63ns-usOBecA" name="match analysis" creationDate="2024-03-19T16:49:53.788+0530" defaultContext="Default">
+  <clientDependency href="../../../metadata/connections/local_postgres14_0.1.item#_MZcEXeXGEe62OIVGi5sLvg"/>
   <taggedValue xmi:id="_nIyyIeXiEe63ns-usOBecA" tag="PREVIEW_ROW_NUMBER" value="10000"/>
   <taggedValue xmi:id="_nIyyIuXiEe63ns-usOBecA" tag="Status" value="development"/>
   <taggedValue xmi:id="_nIyyI-XiEe63ns-usOBecA" tag="Author" value="deepak_dm@qlik.com"/>
-  <taggedValue xmi:id="_nIyyJOXiEe63ns-usOBecA" tag="Purpose"/>
-  <taggedValue xmi:id="_nIyyJeXiEe63ns-usOBecA" tag="Description"/>
+  <taggedValue xmi:id="_nIyyJOXiEe63ns-usOBecA" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_nIyyJeXiEe63ns-usOBecA" tag="Description" value=""/>
   <taggedValue xmi:id="_nIyyJuXiEe63ns-usOBecA" tag="Version" value="0.1"/>
-  <context xmi:id="_nIyyJ-XiEe63ns-usOBecA"/>
+  <taggedValue xmi:id="_ns4WoOXiEe63ns-usOBecA" tag="TEMP_DATA_DIR" value=""/>
+  <taggedValue xmi:id="_ns4WoeXiEe63ns-usOBecA" tag="MAX_BUFFER_SIZE" value="200000"/>
+  <taggedValue xmi:id="_ns4WouXiEe63ns-usOBecA" tag="STORE_ON_DISK" value="false"/>
+  <taggedValue xmi:id="_ntIOQOXiEe63ns-usOBecA" tag="DRILL_DOWN" value="true"/>
+  <taggedValue xmi:id="_ny6GIeXiEe63ns-usOBecA" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+  <context xmi:id="_nIyyJ-XiEe63ns-usOBecA">
+    <connection href="../../../metadata/connections/local_postgres14_0.1.item#_2uXYoOW9Ee62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+  </context>
   <results xmi:id="_nIyyKOXiEe63ns-usOBecA">
     <resultMetadata xmi:id="_nIyyKeXiEe63ns-usOBecA"/>
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_nIyyKuXiEe63ns-usOBecA"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_nIyyK-XiEe63ns-usOBecA">
-      <builtInMatchRuleDefinition xmi:id="_nIyyLOXiEe63ns-usOBecA"/>
+      <builtInMatchRuleDefinition xmi:id="_nIyyLOXiEe63ns-usOBecA">
+        <matchRules xmi:id="_nlSg4OXiEe63ns-usOBecA" name="Match Rule 1"/>
+      </builtInMatchRuleDefinition>
     </indicators>
   </results>
   <parameters xmi:id="_nIyyLeXiEe63ns-usOBecA" analysisType="Match Analysis"/>
+  <contextType xmi:id="_ny6GIOXiEe63ns-usOBecA" confirmationNeeded="false" hide="false" name="Default"/>
 </dataquality.analysis:Analysis>
