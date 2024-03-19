@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_Qz93cOXdEe6b7occNxr0Vw" name="redundancy analysis" creationDate="2024-03-19T16:11:35.664+0530">
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_Qz93cOXdEe6b7occNxr0Vw" name="redundancy analysis" creationDate="2024-03-19T16:11:35.664+0530" defaultContext="Default">
   <taggedValue xmi:id="_Qz93ceXdEe6b7occNxr0Vw" tag="Status" value="development"/>
   <taggedValue xmi:id="_Qz93cuXdEe6b7occNxr0Vw" tag="Author" value="deepak_dm@qlik.com"/>
-  <taggedValue xmi:id="_Qz93c-XdEe6b7occNxr0Vw" tag="Purpose"/>
-  <taggedValue xmi:id="_Qz93dOXdEe6b7occNxr0Vw" tag="Description"/>
+  <taggedValue xmi:id="_Qz93c-XdEe6b7occNxr0Vw" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_Qz93dOXdEe6b7occNxr0Vw" tag="Description" value=""/>
   <taggedValue xmi:id="_Qz93deXdEe6b7occNxr0Vw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_ZR0NgeXdEe6b7occNxr0Vw" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+  <taggedValue xmi:id="_ZR0NhOXdEe6b7occNxr0Vw" tag="Ignore Null" value="false"/>
+  <taggedValue xmi:id="_ZR0NheXdEe6b7occNxr0Vw" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
   <context xmi:id="_Qz93duXdEe6b7occNxr0Vw"/>
   <results xmi:id="_Qz93d-XdEe6b7occNxr0Vw">
     <resultMetadata xmi:id="_Qz93eOXdEe6b7occNxr0Vw"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RowMatchingIndicator" xmi:id="_ZR0NguXdEe6b7occNxr0Vw">
+      <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Row Comparison/Row_Comparison_0.1.definition#_jMh4gJE3Ed2HGNmGoaS-_w"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators.columnset:RowMatchingIndicator" xmi:id="_ZR0Ng-XdEe6b7occNxr0Vw">
+      <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Row Comparison/Row_Comparison_0.1.definition#_jMh4gJE3Ed2HGNmGoaS-_w"/>
+    </indicators>
   </results>
   <parameters xmi:id="_Qz93eeXdEe6b7occNxr0Vw" analysisType="Columns Comparison Analysis"/>
+  <contextType xmi:id="_ZR0NgOXdEe6b7occNxr0Vw" confirmationNeeded="false" hide="false" name="Default"/>
 </dataquality.analysis:Analysis>
