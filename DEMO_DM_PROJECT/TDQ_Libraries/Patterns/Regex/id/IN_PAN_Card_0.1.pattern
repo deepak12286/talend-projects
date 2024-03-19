@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.domain.pattern:Pattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmi:id="_cuomkOXFEe62OIVGi5sLvg" name="IN PAN Card">
+  <taggedValue xmi:id="_cuomkeXFEe62OIVGi5sLvg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_cuomkuXFEe62OIVGi5sLvg" tag="Author" value="deepak_dm@qlik.com"/>
+  <taggedValue xmi:id="_cuomk-XFEe62OIVGi5sLvg" tag="Purpose"/>
+  <taggedValue xmi:id="_cuomlOXFEe62OIVGi5sLvg" tag="Description"/>
+  <taggedValue xmi:id="_cuomleXFEe62OIVGi5sLvg" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_cuomluXFEe62OIVGi5sLvg" tag="Validation_Status" value="true"/>
+  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_cuoml-XFEe62OIVGi5sLvg" expressionType="REGEXP">
+    <expression xmi:id="_cuommOXFEe62OIVGi5sLvg" body="'^[A-Z]{5}[0-9]{4}[A-Z]$'" language="SQL"/>
+  </components>
+</dataquality.domain.pattern:Pattern>
