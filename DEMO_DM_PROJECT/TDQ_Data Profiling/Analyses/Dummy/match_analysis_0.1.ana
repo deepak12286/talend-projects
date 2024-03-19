@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_nIyyIOXiEe63ns-usOBecA" name="match analysis" creationDate="2024-03-19T16:49:53.788+0530">
+  <taggedValue xmi:id="_nIyyIeXiEe63ns-usOBecA" tag="PREVIEW_ROW_NUMBER" value="10000"/>
+  <taggedValue xmi:id="_nIyyIuXiEe63ns-usOBecA" tag="Status" value="development"/>
+  <taggedValue xmi:id="_nIyyI-XiEe63ns-usOBecA" tag="Author" value="deepak_dm@qlik.com"/>
+  <taggedValue xmi:id="_nIyyJOXiEe63ns-usOBecA" tag="Purpose"/>
+  <taggedValue xmi:id="_nIyyJeXiEe63ns-usOBecA" tag="Description"/>
+  <taggedValue xmi:id="_nIyyJuXiEe63ns-usOBecA" tag="Version" value="0.1"/>
+  <context xmi:id="_nIyyJ-XiEe63ns-usOBecA"/>
+  <results xmi:id="_nIyyKOXiEe63ns-usOBecA">
+    <resultMetadata xmi:id="_nIyyKeXiEe63ns-usOBecA"/>
+    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_nIyyKuXiEe63ns-usOBecA"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_nIyyK-XiEe63ns-usOBecA">
+      <builtInMatchRuleDefinition xmi:id="_nIyyLOXiEe63ns-usOBecA"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_nIyyLeXiEe63ns-usOBecA" analysisType="Match Analysis"/>
+</dataquality.analysis:Analysis>
