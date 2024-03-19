@@ -80,7 +80,7 @@
     <resultMetadata xmi:id="_nIyyKeXiEe63ns-usOBecA"/>
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_nIyyKuXiEe63ns-usOBecA"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_nIyyK-XiEe63ns-usOBecA">
-      <builtInMatchRuleDefinition xmi:id="_nIyyLOXiEe63ns-usOBecA">
+      <builtInMatchRuleDefinition xmi:id="_nIyyLOXiEe63ns-usOBecA" recordLinkageAlgorithm="T_SwooshAlgorithm">
         <matchRules xmi:id="_nlSg4OXiEe63ns-usOBecA" name="Match Rule 1"/>
       </builtInMatchRuleDefinition>
     </indicators>
