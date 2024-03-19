@@ -16,6 +16,11 @@
 			<location>C:/Talend/DQ Reports/Customer DQ Report-20240319-1427-00013.pdf</location>
 		</link>
 		<link>
+			<name>.Customer DQ Report-20240319-1457-00043.pdf</name>
+			<type>1</type>
+			<location>C:/Talend/DQ Reports/Customer DQ Report-20240319-1457-00043.pdf</location>
+		</link>
+		<link>
 			<name>.dq_report-20240315-1522-00037.pdf</name>
 			<type>1</type>
 			<location>C:/Dataset/us-500/dq_report-20240315-1522-00037.pdf</location>
