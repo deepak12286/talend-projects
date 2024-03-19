@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_T2BrgOXjEe63ns-usOBecA" name="functional dependency analysis" creationDate="2024-03-19T16:54:53.760+0530">
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_T2BrgOXjEe63ns-usOBecA" name="functional dependency analysis" creationDate="2024-03-19T16:54:53.760+0530" defaultContext="Default">
+  <clientDependency href="../../../metadata/connections/local_postgres14_0.1.item#_MZcEXeXGEe62OIVGi5sLvg"/>
   <taggedValue xmi:id="_T2BrgeXjEe63ns-usOBecA" tag="Status" value="development"/>
   <taggedValue xmi:id="_T2BrguXjEe63ns-usOBecA" tag="Author" value="deepak_dm@qlik.com"/>
-  <taggedValue xmi:id="_T2Brg-XjEe63ns-usOBecA" tag="Purpose"/>
-  <taggedValue xmi:id="_T2BrhOXjEe63ns-usOBecA" tag="Description"/>
+  <taggedValue xmi:id="_T2Brg-XjEe63ns-usOBecA" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_T2BrhOXjEe63ns-usOBecA" tag="Description" value=""/>
   <taggedValue xmi:id="_T2BrheXjEe63ns-usOBecA" tag="Version" value="0.1"/>
-  <context xmi:id="_T2BrhuXjEe63ns-usOBecA"/>
+  <taggedValue xmi:id="_gpkPceXjEe63ns-usOBecA" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+  <taggedValue xmi:id="_gpkPcuXjEe63ns-usOBecA" tag="PREVIEW_ROW_NUMBER" value="50"/>
+  <taggedValue xmi:id="_gpnSweXjEe63ns-usOBecA" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+  <context xmi:id="_T2BrhuXjEe63ns-usOBecA">
+    <connection href="../../../metadata/connections/local_postgres14_0.1.item#_2uXYoOW9Ee62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+  </context>
   <results xmi:id="_T2Brh-XjEe63ns-usOBecA">
-    <resultMetadata xmi:id="_T2BriOXjEe63ns-usOBecA"/>
+    <resultMetadata xmi:id="_T2BriOXjEe63ns-usOBecA" executionDate="2024-03-19T16:56:21.458+0530" executionDuration="128" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+    <indicators xsi:type="dataquality.indicators.columnset:ColumnDependencyIndicator" xmi:id="_gpnSwOXjEe63ns-usOBecA" aCount="8848" distinctACount="316">
+      <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Functional Dependency/Functional_Dependency_0.1.definition#_YqcX0XHpEd6udst2R2sgpA"/>
+      <instantiatedExpressions xmi:id="_gxT2MOXjEe63ns-usOBecA" body="SELECT COUNT(*) AS NB, COUNT(DISTINCT A) AS NBDISTINCT FROM (SELECT DISTINCT &quot;REG_ADDR_CITY&quot; AS A , &quot;REG_ADDR_STATE&quot; AS B FROM  &quot;public&quot;.&quot;customers&quot; C  ) T" language="SQL"/>
+      <columnA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+      <columnB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+    </indicators>
   </results>
   <parameters xmi:id="_T2BrieXjEe63ns-usOBecA" analysisType="Functional Dependency"/>
+  <contextType xmi:id="_gpkPcOXjEe63ns-usOBecA" confirmationNeeded="false" hide="false" name="Default"/>
 </dataquality.analysis:Analysis>
