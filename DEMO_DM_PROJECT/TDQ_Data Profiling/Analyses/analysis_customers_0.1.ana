@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <dataquality.analysis:Analysis xmi:id="_s393EOXEEe62OIVGi5sLvg" name="analysis_customers" supplierDependency="_phwksOXOEe62OIVGi5sLvg" creationDate="2024-03-19T13:15:47.499+0530" defaultContext="Default">
-    <clientDependency href="../../metadata/connections/local_postgres14_0.1.item#_MZcEXeXGEe62OIVGi5sLvg"/>
     <clientDependency href="../../TDQ_Libraries/Patterns/Regex/id/IN_PAN_Card_0.1.pattern#_MeF60OXGEe62OIVGi5sLvg"/>
     <clientDependency href="../../TDQ_Libraries/Patterns/Regex/phone/India_Mobile_Number_0.1.pattern#__V0jYOXNEe62OIVGi5sLvg"/>
     <taggedValue xmi:id="_s393EeXEEe62OIVGi5sLvg" tag="Status" value="development"/>
@@ -12,8 +11,8 @@
     <taggedValue xmi:id="_MZbdQeXGEe62OIVGi5sLvg" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
     <taggedValue xmi:id="_MZbdQuXGEe62OIVGi5sLvg" tag="PREVIEW_ROW_NUMBER" value="500"/>
     <taggedValue xmi:id="_MZbdQ-XGEe62OIVGi5sLvg" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
-    <taggedValue xmi:id="_MZcEXuXGEe62OIVGi5sLvg" tag="Is Use Sample Data" value="true"/>
-    <taggedValue xmi:id="_c-Lk0OXNEe62OIVGi5sLvg" tag="false" value="true"/>
+    <taggedValue xmi:id="_MZcEXuXGEe62OIVGi5sLvg" tag="Is Use Sample Data" value="false"/>
+    <taggedValue xmi:id="_c-Lk0OXNEe62OIVGi5sLvg" tag="false" value="false"/>
     <context xmi:id="_s393FuXEEe62OIVGi5sLvg">
       <connection href="../../metadata/connections/local_postgres14_0.1.item#_2uXYoOW9Ee62OIVGi5sLvg"/>
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
@@ -21,8 +20,8 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
     </context>
     <results xmi:id="_s393F-XEEe62OIVGi5sLvg">
-      <resultMetadata xmi:id="_s393GOXEEe62OIVGi5sLvg" executionDate="2024-03-19T14:57:37.275+0530" executionDuration="897" message="" executionNumber="6" lastRunOk="true" lastExecutionNumberOk="6"/>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_MZcEUOXGEe62OIVGi5sLvg" count="500" computed="true">
+      <resultMetadata xmi:id="_s393GOXEEe62OIVGi5sLvg" executionDate="2024-03-19T15:12:26.926+0530" executionDuration="1803" message="" executionNumber="7" lastRunOk="true" lastExecutionNumberOk="7"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_MZcEUOXGEe62OIVGi5sLvg" count="100000" computed="true">
         <parameters xmi:id="_MZcEUeXGEe62OIVGi5sLvg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
@@ -33,7 +32,7 @@
           <sqlGenericExpression xmi:id="_MybzI-XGEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_MZcEUuXGEe62OIVGi5sLvg" count="500" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_MZcEUuXGEe62OIVGi5sLvg" count="100000" computed="true">
         <parameters xmi:id="_MZcEU-XGEe62OIVGi5sLvg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -44,7 +43,7 @@
           <sqlGenericExpression xmi:id="_MyhSs-XGEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_MZcEVOXGEe62OIVGi5sLvg" count="500" computed="true" distinctValueCount="500">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_MZcEVOXGEe62OIVGi5sLvg" count="100000" computed="true" distinctValueCount="100000">
         <parameters xmi:id="_MZcEVeXGEe62OIVGi5sLvg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
@@ -55,7 +54,7 @@
           <sqlGenericExpression xmi:id="_Myk9E-XGEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_MZcEWOXGEe62OIVGi5sLvg" count="500" computed="true" duplicateValueCount="0">
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_MZcEWOXGEe62OIVGi5sLvg" count="100000" computed="true" duplicateValueCount="0">
         <parameters xmi:id="_MZcEWeXGEe62OIVGi5sLvg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
@@ -72,7 +71,7 @@
           <sqlGenericExpression xmi:id="_Myy_ieXGEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_MZcEWuXGEe62OIVGi5sLvg" name="IN PAN Card" count="500" computed="true" inValidRow="true" notMatchingValueCount="500">
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_MZcEWuXGEe62OIVGi5sLvg" name="IN PAN Card" count="100000" computed="true" inValidRow="true" notMatchingValueCount="100000">
         <parameters xmi:id="_MZcEW-XGEe62OIVGi5sLvg">
           <dataValidDomain xmi:id="_MZcEXOXGEe62OIVGi5sLvg">
             <patterns href="../../TDQ_Libraries/Patterns/Regex/id/IN_PAN_Card_0.1.pattern#_cuomkOXFEe62OIVGi5sLvg"/>
@@ -82,40 +81,44 @@
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_MzDeNeXGEe62OIVGi5sLvg" body="SELECT COUNT(CASE WHEN cast(&quot;PAN_NO&quot; as VARCHAR) ~ '^[A-Z]{5}[0-9]{4}[A-Z]$' THEN 1 END), COUNT(*) FROM &quot;public&quot;.&quot;customers&quot; " language="PostgreSQL"/>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="__Vo9MOXNEe62OIVGi5sLvg" count="500" computed="true">
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="__Vo9MOXNEe62OIVGi5sLvg" count="100000" computed="true">
         <parameters xmi:id="__Vo9MeXNEe62OIVGi5sLvg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="__wMHAOXUEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM &quot;public&quot;.&quot;customers&quot; " language="PostgreSQL"/>
         <builtInIndicatorDefinition xmi:id="__dPaAOXNEe62OIVGi5sLvg" name="Row Count" label="Row Count">
           <taggedValue xmi:id="__dPaAeXNEe62OIVGi5sLvg" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="__dPaAuXNEe62OIVGi5sLvg" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="__dPaA-XNEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="__Vo9MuXNEe62OIVGi5sLvg" count="500" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="__Vo9MuXNEe62OIVGi5sLvg" count="100000" computed="true">
         <parameters xmi:id="__Vo9M-XNEe62OIVGi5sLvg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="__wMHAuXUEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM &quot;public&quot;.&quot;customers&quot; WHERE &quot;MOBILE_NO&quot; IS NULL " language="PostgreSQL"/>
         <builtInIndicatorDefinition xmi:id="__dXV0OXNEe62OIVGi5sLvg" name="Null Count" label="Null Count">
           <taggedValue xmi:id="__dXV0eXNEe62OIVGi5sLvg" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="__dXV0uXNEe62OIVGi5sLvg" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="__dXV0-XNEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="__Vo9NOXNEe62OIVGi5sLvg" count="500" computed="true" distinctValueCount="500">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="__Vo9NOXNEe62OIVGi5sLvg" count="100000" computed="true" distinctValueCount="100000">
         <parameters xmi:id="__Vo9NeXNEe62OIVGi5sLvg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="__wMHA-XUEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;MOBILE_NO&quot; FROM &quot;public&quot;.&quot;customers&quot; ) A" language="PostgreSQL"/>
         <builtInIndicatorDefinition xmi:id="__deqkOXNEe62OIVGi5sLvg" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="__dfRoOXNEe62OIVGi5sLvg" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="__dfRoeXNEe62OIVGi5sLvg" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="__dfRouXNEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="__Vo9NuXNEe62OIVGi5sLvg" count="500" computed="true" duplicateValueCount="0">
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="__Vo9NuXNEe62OIVGi5sLvg" count="100000" computed="true" duplicateValueCount="0">
         <parameters xmi:id="__Vo9N-XNEe62OIVGi5sLvg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="__wMuEOXUEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM (SELECT &quot;MOBILE_NO&quot;, COUNT(*) FROM &quot;public&quot;.&quot;customers&quot;  m  GROUP BY &quot;MOBILE_NO&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
         <builtInIndicatorDefinition xmi:id="__dlYQOXNEe62OIVGi5sLvg" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="__dlYQeXNEe62OIVGi5sLvg" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="__dlYQuXNEe62OIVGi5sLvg" tag="Purpose" value="evaluates the number of duplicated records"/>
@@ -128,10 +131,11 @@
           <sqlGenericExpression xmi:id="__dlYSeXNEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="__Vo9OOXNEe62OIVGi5sLvg" count="500" computed="true">
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="__Vo9OOXNEe62OIVGi5sLvg" count="100000" computed="true">
         <parameters xmi:id="__Vo9OeXNEe62OIVGi5sLvg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="__wMuEeXUEe62OIVGi5sLvg" body="SELECT COUNT(&quot;MOBILE_NO&quot;) FROM &quot;public&quot;.&quot;customers&quot; WHERE TRIM(&quot;MOBILE_NO&quot;) = '' " language="PostgreSQL"/>
         <builtInIndicatorDefinition xmi:id="__dt7IOXNEe62OIVGi5sLvg" name="Blank Count" label="Blank Count">
           <taggedValue xmi:id="__dt7IeXNEe62OIVGi5sLvg" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
           <taggedValue xmi:id="__dt7IuXNEe62OIVGi5sLvg" tag="Purpose" value="evaluates the number of blank records"/>
@@ -142,7 +146,7 @@
           <sqlGenericExpression xmi:id="__dt7J-XNEe62OIVGi5sLvg" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="__Vo9OuXNEe62OIVGi5sLvg" name="India Mobile Number" count="500" computed="true" inValidRow="true" matchingValueCount="47" notMatchingValueCount="453">
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="__Vo9OuXNEe62OIVGi5sLvg" name="India Mobile Number" count="100000" computed="true" inValidRow="true" matchingValueCount="9935" notMatchingValueCount="90065">
         <parameters xmi:id="__Vo9O-XNEe62OIVGi5sLvg">
           <dataValidDomain xmi:id="__Vo9POXNEe62OIVGi5sLvg">
             <patterns href="../../TDQ_Libraries/Patterns/Regex/phone/India_Mobile_Number_0.1.pattern#_sLVrgOXNEe62OIVGi5sLvg"/>
@@ -150,41 +154,46 @@
         </parameters>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="__wMuEuXUEe62OIVGi5sLvg" body="SELECT COUNT(CASE WHEN cast(&quot;MOBILE_NO&quot; as VARCHAR) ~ '^[789]\d{9}$' THEN 1 END), COUNT(*) FROM &quot;public&quot;.&quot;customers&quot; " language="PostgreSQL"/>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="__Vo9PeXNEe62OIVGi5sLvg" count="500" computed="true">
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="__Vo9PeXNEe62OIVGi5sLvg" count="100000" computed="true">
         <parameters xmi:id="__Vo9PuXNEe62OIVGi5sLvg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="__wMHAeXUEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM &quot;public&quot;.&quot;customers&quot; " language="PostgreSQL"/>
         <builtInIndicatorDefinition xmi:id="__d128OXNEe62OIVGi5sLvg" name="Row Count" label="Row Count">
           <taggedValue xmi:id="__d128eXNEe62OIVGi5sLvg" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="__d128uXNEe62OIVGi5sLvg" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="__d128-XNEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="__Vo9P-XNEe62OIVGi5sLvg" count="500" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="__Vo9P-XNEe62OIVGi5sLvg" count="100000" computed="true">
         <parameters xmi:id="__Vo9QOXNEe62OIVGi5sLvg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="__wMuE-XUEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM &quot;public&quot;.&quot;customers&quot; WHERE &quot;MOBILE_NO2&quot; IS NULL " language="PostgreSQL"/>
         <builtInIndicatorDefinition xmi:id="__d8koOXNEe62OIVGi5sLvg" name="Null Count" label="Null Count">
           <taggedValue xmi:id="__d8koeXNEe62OIVGi5sLvg" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="__d8kouXNEe62OIVGi5sLvg" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="__d8ko-XNEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="__Vo9QeXNEe62OIVGi5sLvg" count="500" computed="true" distinctValueCount="500">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="__Vo9QeXNEe62OIVGi5sLvg" count="100000" computed="true" distinctValueCount="100000">
         <parameters xmi:id="__Vo9QuXNEe62OIVGi5sLvg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="__wMuFOXUEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;MOBILE_NO2&quot; FROM &quot;public&quot;.&quot;customers&quot; ) A" language="PostgreSQL"/>
         <builtInIndicatorDefinition xmi:id="__eCEMOXNEe62OIVGi5sLvg" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="__eCEMeXNEe62OIVGi5sLvg" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="__eCEMuXNEe62OIVGi5sLvg" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="__eCEM-XNEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="__Vo9Q-XNEe62OIVGi5sLvg" count="500" computed="true" duplicateValueCount="0">
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="__Vo9Q-XNEe62OIVGi5sLvg" count="100000" computed="true" duplicateValueCount="0">
         <parameters xmi:id="__Vo9ROXNEe62OIVGi5sLvg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="__wMuFeXUEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM (SELECT &quot;MOBILE_NO2&quot;, COUNT(*) FROM &quot;public&quot;.&quot;customers&quot;  m  GROUP BY &quot;MOBILE_NO2&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
         <builtInIndicatorDefinition xmi:id="__eIx4OXNEe62OIVGi5sLvg" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="__eIx4eXNEe62OIVGi5sLvg" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="__eIx4uXNEe62OIVGi5sLvg" tag="Purpose" value="evaluates the number of duplicated records"/>
@@ -197,10 +206,11 @@
           <sqlGenericExpression xmi:id="__eIx6eXNEe62OIVGi5sLvg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="__Vo9ReXNEe62OIVGi5sLvg" count="500" computed="true">
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="__Vo9ReXNEe62OIVGi5sLvg" count="100000" computed="true">
         <parameters xmi:id="__Vo9RuXNEe62OIVGi5sLvg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="__wMuFuXUEe62OIVGi5sLvg" body="SELECT COUNT(&quot;MOBILE_NO2&quot;) FROM &quot;public&quot;.&quot;customers&quot; WHERE TRIM(&quot;MOBILE_NO2&quot;) = '' " language="PostgreSQL"/>
         <builtInIndicatorDefinition xmi:id="__eO4gOXNEe62OIVGi5sLvg" name="Blank Count" label="Blank Count">
           <taggedValue xmi:id="__eO4geXNEe62OIVGi5sLvg" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
           <taggedValue xmi:id="__eO4guXNEe62OIVGi5sLvg" tag="Purpose" value="evaluates the number of blank records"/>
@@ -211,7 +221,7 @@
           <sqlGenericExpression xmi:id="__eO4h-XNEe62OIVGi5sLvg" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="__Vo9R-XNEe62OIVGi5sLvg" name="India Mobile Number" count="500" computed="true" inValidRow="true" matchingValueCount="41" notMatchingValueCount="459">
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="__Vo9R-XNEe62OIVGi5sLvg" name="India Mobile Number" count="100000" computed="true" inValidRow="true" matchingValueCount="10234" notMatchingValueCount="89766">
         <parameters xmi:id="__Vo9SOXNEe62OIVGi5sLvg">
           <dataValidDomain xmi:id="__Vo9SeXNEe62OIVGi5sLvg">
             <patterns href="../../TDQ_Libraries/Patterns/Regex/phone/India_Mobile_Number_0.1.pattern#_sLVrgOXNEe62OIVGi5sLvg"/>
@@ -219,9 +229,10 @@
         </parameters>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="__wMuF-XUEe62OIVGi5sLvg" body="SELECT COUNT(CASE WHEN cast(&quot;MOBILE_NO2&quot; as VARCHAR) ~ '^[789]\d{9}$' THEN 1 END), COUNT(*) FROM &quot;public&quot;.&quot;customers&quot; " language="PostgreSQL"/>
       </indicators>
     </results>
-    <parameters xmi:id="_s393GeXEEe62OIVGi5sLvg" dataFilter="_MePr0OXGEe62OIVGi5sLvg" analysisType="Multiple Column Analysis" executionLanguage="Java" sampleDataShowWay="n random rows"/>
+    <parameters xmi:id="_s393GeXEEe62OIVGi5sLvg" dataFilter="_MePr0OXGEe62OIVGi5sLvg" analysisType="Multiple Column Analysis" sampleDataShowWay="n random rows"/>
     <contextType xmi:id="_MZbdQOXGEe62OIVGi5sLvg" confirmationNeeded="false" hide="false" name="Default"/>
   </dataquality.analysis:Analysis>
   <orgomg.cwm.objectmodel.core:Dependency xmi:id="_phwksOXOEe62OIVGi5sLvg" kind="Usage" supplier="_s393EOXEEe62OIVGi5sLvg">
