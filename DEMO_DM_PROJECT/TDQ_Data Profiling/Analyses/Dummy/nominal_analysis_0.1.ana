@@ -1,13 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_Fj91o-XmEe63ns-usOBecA" name="nominal analysis" creationDate="2024-03-19T17:14:46.399+0530">
-  <taggedValue xmi:id="_Fj91pOXmEe63ns-usOBecA" tag="Status" value="development"/>
-  <taggedValue xmi:id="_Fj91peXmEe63ns-usOBecA" tag="Author" value="deepak_dm@qlik.com"/>
-  <taggedValue xmi:id="_Fj91puXmEe63ns-usOBecA" tag="Purpose"/>
-  <taggedValue xmi:id="_Fj91p-XmEe63ns-usOBecA" tag="Description"/>
-  <taggedValue xmi:id="_Fj91qOXmEe63ns-usOBecA" tag="Version" value="0.1"/>
-  <context xmi:id="_Fj91qeXmEe63ns-usOBecA"/>
-  <results xmi:id="_Fj91quXmEe63ns-usOBecA">
-    <resultMetadata xmi:id="_Fj91q-XmEe63ns-usOBecA"/>
-  </results>
-  <parameters xmi:id="_Fj91rOXmEe63ns-usOBecA" analysisType="Multiple Column Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_Fj91o-XmEe63ns-usOBecA" name="nominal analysis" creationDate="2024-03-19T17:14:46.399+0530" defaultContext="Default">
+    <clientDependency href="../../../metadata/connections/local_postgres14_0.1.item#_MZcEXeXGEe62OIVGi5sLvg"/>
+    <taggedValue xmi:id="_Fj91pOXmEe63ns-usOBecA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_Fj91peXmEe63ns-usOBecA" tag="Author" value="deepak_dm@qlik.com"/>
+    <taggedValue xmi:id="_Fj91puXmEe63ns-usOBecA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_Fj91p-XmEe63ns-usOBecA" tag="Description" value=""/>
+    <taggedValue xmi:id="_Fj91qOXmEe63ns-usOBecA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_F_rfYeXmEe63ns-usOBecA" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_F_rfYuXmEe63ns-usOBecA" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_F_rfY-XmEe63ns-usOBecA" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_F_sGpOXmEe63ns-usOBecA" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_Fj91qeXmEe63ns-usOBecA">
+      <connection href="../../../metadata/connections/local_postgres14_0.1.item#_2uXYoOW9Ee62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+    </context>
+    <results xmi:id="_Fj91quXmEe63ns-usOBecA">
+      <resultMetadata xmi:id="_Fj91q-XmEe63ns-usOBecA"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_F_sGcOXmEe63ns-usOBecA">
+        <parameters xmi:id="_F_sGceXmEe63ns-usOBecA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_F_sGcuXmEe63ns-usOBecA">
+        <parameters xmi:id="_F_sGc-XmEe63ns-usOBecA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_F_sGdOXmEe63ns-usOBecA">
+        <parameters xmi:id="_F_sGdeXmEe63ns-usOBecA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_F_sGduXmEe63ns-usOBecA">
+        <parameters xmi:id="_F_sGd-XmEe63ns-usOBecA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_F_sGeOXmEe63ns-usOBecA">
+        <parameters xmi:id="_F_sGeeXmEe63ns-usOBecA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_F_sGeuXmEe63ns-usOBecA">
+        <parameters xmi:id="_F_sGe-XmEe63ns-usOBecA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_F_sGfOXmEe63ns-usOBecA">
+        <parameters xmi:id="_F_sGfeXmEe63ns-usOBecA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Frequency_Table_0.1.definition#_ccIR4hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:TextIndicator" xmi:id="_F_sGfuXmEe63ns-usOBecA">
+        <parameters xmi:id="_F_sGf-XmEe63ns-usOBecA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Text_Statistics_0.1.definition#_yb9x0zh8Ed2XmO7pl5Yuyg"/>
+        <averageLengthIndicator xmi:id="_F_sGgOXmEe63ns-usOBecA">
+          <parameters xmi:id="_F_sGgeXmEe63ns-usOBecA">
+            <textParameter xmi:id="_F_sGguXmEe63ns-usOBecA" useBlank="false"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_0.1.definition#_ccIR4BF2Ed2PKb6nEJEvhw"/>
+        </averageLengthIndicator>
+        <maxLengthIndicator xmi:id="_F_sGg-XmEe63ns-usOBecA">
+          <parameters xmi:id="_F_sGhOXmEe63ns-usOBecA">
+            <textParameter xmi:id="_F_sGheXmEe63ns-usOBecA" useBlank="false"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_0.1.definition#_ccHq1RF2Ed2PKb6nEJEvhw"/>
+        </maxLengthIndicator>
+        <minLengthIndicator xmi:id="_F_sGhuXmEe63ns-usOBecA">
+          <parameters xmi:id="_F_sGh-XmEe63ns-usOBecA">
+            <textParameter xmi:id="_F_sGiOXmEe63ns-usOBecA" useBlank="false"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_0.1.definition#_ccHq1BF2Ed2PKb6nEJEvhw"/>
+        </minLengthIndicator>
+        <minLengthWithBlankIndicator xmi:id="_F_sGieXmEe63ns-usOBecA">
+          <parameters xmi:id="_F_sGiuXmEe63ns-usOBecA">
+            <textParameter xmi:id="_F_sGi-XmEe63ns-usOBecA"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_0.1.definition#_G4EzQZU9Ed-Y15ulK_jijQ"/>
+        </minLengthWithBlankIndicator>
+        <minLengthWithNullIndicator xmi:id="_F_sGjOXmEe63ns-usOBecA">
+          <parameters xmi:id="_F_sGjeXmEe63ns-usOBecA">
+            <textParameter xmi:id="_F_sGjuXmEe63ns-usOBecA" useBlank="false" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Null_0.1.definition#_a4KsoI1qEd-xwI2imLgHRA"/>
+        </minLengthWithNullIndicator>
+        <minLengthWithBlankNullIndicator xmi:id="_F_sGj-XmEe63ns-usOBecA">
+          <parameters xmi:id="_F_sGkOXmEe63ns-usOBecA">
+            <textParameter xmi:id="_F_sGkeXmEe63ns-usOBecA" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_and_Null_0.1.definition#_9HDjMJSOEd-TE5ti6XNR2Q"/>
+        </minLengthWithBlankNullIndicator>
+        <maxLengthWithBlankIndicator xmi:id="_F_sGkuXmEe63ns-usOBecA">
+          <parameters xmi:id="_F_sGk-XmEe63ns-usOBecA">
+            <textParameter xmi:id="_F_sGlOXmEe63ns-usOBecA"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_0.1.definition#_-xmZcJSOEd-TE5ti6XNR2Q"/>
+        </maxLengthWithBlankIndicator>
+        <maxLengthWithNullIndicator xmi:id="_F_sGleXmEe63ns-usOBecA">
+          <parameters xmi:id="_F_sGluXmEe63ns-usOBecA">
+            <textParameter xmi:id="_F_sGl-XmEe63ns-usOBecA" useBlank="false" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Null_0.1.definition#_-_UFUJSOEd-TE5ti6XNR2Q"/>
+        </maxLengthWithNullIndicator>
+        <maxLengthWithBlankNullIndicator xmi:id="_F_sGmOXmEe63ns-usOBecA">
+          <parameters xmi:id="_F_sGmeXmEe63ns-usOBecA">
+            <textParameter xmi:id="_F_sGmuXmEe63ns-usOBecA" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_and_Null_0.1.definition#_-hzp8JSOEd-TE5ti6XNR2Q"/>
+        </maxLengthWithBlankNullIndicator>
+        <avgLengthWithBlankIndicator xmi:id="_F_sGm-XmEe63ns-usOBecA">
+          <parameters xmi:id="_F_sGnOXmEe63ns-usOBecA">
+            <textParameter xmi:id="_F_sGneXmEe63ns-usOBecA"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_0.1.definition#__gPoIJSOEd-TE5ti6XNR2Q"/>
+        </avgLengthWithBlankIndicator>
+        <avgLengthWithNullIndicator xmi:id="_F_sGnuXmEe63ns-usOBecA">
+          <parameters xmi:id="_F_sGn-XmEe63ns-usOBecA">
+            <textParameter xmi:id="_F_sGoOXmEe63ns-usOBecA" useBlank="false" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Null_0.1.definition#__vI_wJSOEd-TE5ti6XNR2Q"/>
+        </avgLengthWithNullIndicator>
+        <avgLengthWithBlankNullIndicator xmi:id="_F_sGoeXmEe63ns-usOBecA">
+          <parameters xmi:id="_F_sGouXmEe63ns-usOBecA">
+            <textParameter xmi:id="_F_sGo-XmEe63ns-usOBecA" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_and_Null_0.1.definition#__TbUIJSOEd-TE5ti6XNR2Q"/>
+        </avgLengthWithBlankNullIndicator>
+      </indicators>
+    </results>
+    <parameters xmi:id="_Fj91rOXmEe63ns-usOBecA" dataFilter="_GObtEOXmEe63ns-usOBecA" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_F_rfYOXmEe63ns-usOBecA" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_GObtEOXmEe63ns-usOBecA" name="nominal analysis">
+    <ranges xmi:id="_GObtEeXmEe63ns-usOBecA">
+      <expressions xmi:id="_GObtEuXmEe63ns-usOBecA">
+        <expression xsi:type="relational:TdExpression" xmi:id="_GObtE-XmEe63ns-usOBecA" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
