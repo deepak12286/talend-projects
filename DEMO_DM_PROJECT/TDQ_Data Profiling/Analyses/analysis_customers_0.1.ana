@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <dataquality.analysis:Analysis xmi:id="_s393EOXEEe62OIVGi5sLvg" name="analysis_customers" creationDate="2024-03-19T13:15:47.499+0530" defaultContext="Default">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_s393EOXEEe62OIVGi5sLvg" name="analysis_customers" supplierDependency="_phwksOXOEe62OIVGi5sLvg" creationDate="2024-03-19T13:15:47.499+0530" defaultContext="Default">
     <clientDependency href="../../metadata/connections/local_postgres14_0.1.item#_MZcEXeXGEe62OIVGi5sLvg"/>
     <clientDependency href="../../TDQ_Libraries/Patterns/Regex/id/IN_PAN_Card_0.1.pattern#_MeF60OXGEe62OIVGi5sLvg"/>
     <clientDependency href="../../TDQ_Libraries/Patterns/Regex/phone/India_Mobile_Number_0.1.pattern#__V0jYOXNEe62OIVGi5sLvg"/>
@@ -231,4 +231,7 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_phwksOXOEe62OIVGi5sLvg" kind="Usage" supplier="_s393EOXEEe62OIVGi5sLvg">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/Customer_DQ_Report_0.1.rep#_a2ZjgOXOEe62OIVGi5sLvg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
