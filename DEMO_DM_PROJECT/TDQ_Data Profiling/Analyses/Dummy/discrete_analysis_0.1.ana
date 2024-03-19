@@ -8,7 +8,7 @@
     <taggedValue xmi:id="_FruzNOXnEe63ns-usOBecA" tag="Description" value=""/>
     <taggedValue xmi:id="_FruzNeXnEe63ns-usOBecA" tag="Version" value="0.1"/>
     <taggedValue xmi:id="_GArIceXnEe63ns-usOBecA" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
-    <taggedValue xmi:id="_GArIcuXnEe63ns-usOBecA" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_GArIcuXnEe63ns-usOBecA" tag="PREVIEW_ROW_NUMBER" value="100"/>
     <taggedValue xmi:id="_GArIc-XnEe63ns-usOBecA" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
     <taggedValue xmi:id="_GArvjOXnEe63ns-usOBecA" tag="Is Use Sample Data" value="false"/>
     <context xmi:id="_FruzNuXnEe63ns-usOBecA">
@@ -16,7 +16,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
     </context>
     <results xmi:id="_FruzN-XnEe63ns-usOBecA">
-      <resultMetadata xmi:id="_FruzOOXnEe63ns-usOBecA" executionDate="2024-03-19T17:22:25.397+0530" executionDuration="595" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <resultMetadata xmi:id="_FruzOOXnEe63ns-usOBecA" executionDate="2024-03-19T17:24:27.464+0530" executionDuration="929" message="" executionNumber="2" lastRunOk="true" lastExecutionNumberOk="2"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_GArvgOXnEe63ns-usOBecA" count="100000" computed="true">
         <parameters xmi:id="_GArvgeXnEe63ns-usOBecA"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
@@ -84,7 +84,7 @@
           <sqlGenericExpression xmi:id="_J0BeSeXnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:BinFrequencyIndicator" xmi:id="_GArviuXnEe63ns-usOBecA" count="100000" computed="true" distinctValueCount="10" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000629AF27372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C75657871007E000300000000000000037371007E00020037A3F67371007E000500000000000000027371007E0002002BE22F71007E00067371007E0002009431D071007E00087371007E00020063245A71007E00067371007E00020032B5E871007E00087371007E00020047879D71007E00087371007E00020080C36B71007E00087371007E000200472D7B71007E00087371007E0002002C638071007E000878">
+      <indicators xsi:type="dataquality.indicators:BinFrequencyIndicator" xmi:id="_GArviuXnEe63ns-usOBecA" count="100000" computed="true" distinctValueCount="10" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000629AF27372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C75657871007E000300000000000000037371007E0002005FD03D7371007E000500000000000000027371007E0002007F44EC71007E00087371007E000200754E4671007E00087371007E0002002BE22F71007E00067371007E00020093E64771007E00087371007E0002007FB8D771007E00087371007E00020063245A71007E00067371007E00020032B5E871007E00087371007E00020061070D71007E000878">
         <parameters xmi:id="_GArvi-XnEe63ns-usOBecA"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Bin_Frequency_Table_0.1.definition#_OCCCEBl4EeGMPdtm417kpw"/>
@@ -102,7 +102,7 @@
         </builtInIndicatorDefinition>
       </indicators>
     </results>
-    <parameters xmi:id="_FruzOeXnEe63ns-usOBecA" dataFilter="_GNqbkOXnEe63ns-usOBecA" analysisType="Multiple Column Analysis"/>
+    <parameters xmi:id="_FruzOeXnEe63ns-usOBecA" dataFilter="_GNqbkOXnEe63ns-usOBecA" analysisType="Multiple Column Analysis" sampleDataShowWay="n random rows"/>
     <contextType xmi:id="_GArIcOXnEe63ns-usOBecA" confirmationNeeded="false" hide="false" name="Default"/>
   </dataquality.analysis:Analysis>
   <dataquality.domain:Domain xmi:id="_GNqbkOXnEe63ns-usOBecA" name="discrete analysis">
