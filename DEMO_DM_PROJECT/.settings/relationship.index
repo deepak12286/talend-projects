@@ -51,6 +51,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_HB40AOXKEe62OIVGi5sLvg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_ciUB0OXFEe62OIVGi5sLvg",
+    "version" : "Latest",
+    "type" : "pattern"
+  }, {
+    "id" : "_ciUB0OXFEe62OIVGi5sLvg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_aBLbcOW9Ee62OIVGi5sLvg",
     "version" : "0.1",
     "type" : "job"
