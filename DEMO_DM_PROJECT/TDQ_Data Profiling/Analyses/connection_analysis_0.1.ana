@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.schema="http://dataquality.indicators.schema" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmi:id="_4beCkOXcEe6b7occNxr0Vw" name="connection_analysis" creationDate="2024-03-19T16:08:52.911+0530">
+  <clientDependency href="../../metadata/connections/local_postgres14_0.1.item#_MZcEXeXGEe62OIVGi5sLvg"/>
+  <taggedValue xmi:id="_4beCkeXcEe6b7occNxr0Vw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_4beCkuXcEe6b7occNxr0Vw" tag="Author" value="deepak_dm@qlik.com"/>
+  <taggedValue xmi:id="_4beCk-XcEe6b7occNxr0Vw" tag="Purpose"/>
+  <taggedValue xmi:id="_4beClOXcEe6b7occNxr0Vw" tag="Description"/>
+  <taggedValue xmi:id="_4beCleXcEe6b7occNxr0Vw" tag="Version" value="0.1"/>
+  <context xmi:id="_4beCluXcEe6b7occNxr0Vw">
+    <connection href="../../metadata/connections/local_postgres14_0.1.item#_2uXYoOW9Ee62OIVGi5sLvg"/>
+    <analysedElements xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/local_postgres14_0.1.item#_2uXYoOW9Ee62OIVGi5sLvg"/>
+  </context>
+  <results xmi:id="_4beCl-XcEe6b7occNxr0Vw">
+    <resultMetadata xmi:id="_4beCmOXcEe6b7occNxr0Vw"/>
+    <indicators xsi:type="dataquality.indicators.schema:ConnectionIndicator" xmi:id="_4beCmeXcEe6b7occNxr0Vw">
+      <analyzedElement xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/local_postgres14_0.1.item#_2uXYoOW9Ee62OIVGi5sLvg"/>
+      <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Connection_Overview_0.1.definition#_nZEo8MYSEd27NP4lvE0A4w"/>
+      <schemaIndicators xmi:id="_4beCmuXcEe6b7occNxr0Vw">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/local_postgres14_0.1.item#_ffZTceXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <catalogIndicators xmi:id="_4bepoOXcEe6b7occNxr0Vw">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../metadata/connections/local_postgres14_0.1.item#_ffZTcOXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Catalog_Overview_0.1.definition#_QwDiwMYUEd27NP4lvE0A4w"/>
+      </catalogIndicators>
+    </indicators>
+  </results>
+  <parameters xmi:id="_4bepoeXcEe6b7occNxr0Vw" analysisType="Connection Analysis"/>
+</dataquality.analysis:Analysis>
