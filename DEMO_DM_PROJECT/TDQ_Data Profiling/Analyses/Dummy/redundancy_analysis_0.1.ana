@@ -389,6 +389,6 @@
       <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
     </indicators>
   </results>
-  <parameters xmi:id="_Qz93eeXdEe6b7occNxr0Vw" analysisType="Columns Comparison Analysis"/>
+  <parameters xmi:id="_Qz93eeXdEe6b7occNxr0Vw" analysisType="Columns Comparison Analysis" deactivatedIndicators="_ZR0Ng-XdEe6b7occNxr0Vw"/>
   <contextType xmi:id="_ZR0NgOXdEe6b7occNxr0Vw" confirmationNeeded="false" hide="false" name="Default"/>
 </dataquality.analysis:Analysis>
