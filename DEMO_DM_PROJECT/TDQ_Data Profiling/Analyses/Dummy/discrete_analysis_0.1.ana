@@ -16,36 +16,90 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
     </context>
     <results xmi:id="_FruzN-XnEe63ns-usOBecA">
-      <resultMetadata xmi:id="_FruzOOXnEe63ns-usOBecA"/>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_GArvgOXnEe63ns-usOBecA">
+      <resultMetadata xmi:id="_FruzOOXnEe63ns-usOBecA" executionDate="2024-03-19T17:22:25.397+0530" executionDuration="595" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_GArvgOXnEe63ns-usOBecA" count="100000" computed="true">
         <parameters xmi:id="_GArvgeXnEe63ns-usOBecA"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_J0L2UOXnEe63ns-usOBecA" body="SELECT COUNT(*) FROM &quot;public&quot;.&quot;customers&quot; " language="PostgreSQL"/>
+        <builtInIndicatorDefinition xmi:id="_JzyNsOXnEe63ns-usOBecA" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_JzyNseXnEe63ns-usOBecA" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_JzyNsuXnEe63ns-usOBecA" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_JzyNs-XnEe63ns-usOBecA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_GArvguXnEe63ns-usOBecA">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_GArvguXnEe63ns-usOBecA" count="100000" computed="true">
         <parameters xmi:id="_GArvg-XnEe63ns-usOBecA"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_J0L2UeXnEe63ns-usOBecA" body="SELECT COUNT(*) FROM &quot;public&quot;.&quot;customers&quot; WHERE &quot;CIN&quot; IS NULL " language="PostgreSQL"/>
+        <builtInIndicatorDefinition xmi:id="_Jz3GMOXnEe63ns-usOBecA" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_Jz3GMeXnEe63ns-usOBecA" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_Jz3GMuXnEe63ns-usOBecA" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_Jz3GM-XnEe63ns-usOBecA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_GArvhOXnEe63ns-usOBecA">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_GArvhOXnEe63ns-usOBecA" count="100000" computed="true" distinctValueCount="99454">
         <parameters xmi:id="_GArvheXnEe63ns-usOBecA"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_J0L2UuXnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;CIN&quot; FROM &quot;public&quot;.&quot;customers&quot; ) A" language="PostgreSQL"/>
+        <builtInIndicatorDefinition xmi:id="_Jz6JgOXnEe63ns-usOBecA" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_Jz6JgeXnEe63ns-usOBecA" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_Jz6JguXnEe63ns-usOBecA" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_Jz6Jg-XnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_GArvhuXnEe63ns-usOBecA">
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_GArvhuXnEe63ns-usOBecA" count="100000" computed="true" uniqueValueCount="98911">
         <parameters xmi:id="_GArvh-XnEe63ns-usOBecA"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_J0L2U-XnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &quot;CIN&quot;, COUNT(*) FROM &quot;public&quot;.&quot;customers&quot;  GROUP BY &quot;CIN&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
+        <builtInIndicatorDefinition xmi:id="_Jz9z4OXnEe63ns-usOBecA" name="Unique Count" label="Unique Count">
+          <taggedValue xmi:id="_Jz9z4eXnEe63ns-usOBecA" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
+          <taggedValue xmi:id="_Jz9z4uXnEe63ns-usOBecA" tag="Purpose" value="evaluates the number of unique records"/>
+          <sqlGenericExpression xmi:id="_Jz9z4-XnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
+          <sqlGenericExpression xmi:id="_Jz9z5OXnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_Jz9z5eXnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) myquery" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_Jz9z5uXnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_Jz9z5-XnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_Jz9z6OXnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_Jz9z6eXnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_GArviOXnEe63ns-usOBecA">
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_GArviOXnEe63ns-usOBecA" count="100000" computed="true" duplicateValueCount="543">
         <parameters xmi:id="_GArvieXnEe63ns-usOBecA"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_J0L2VOXnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &quot;CIN&quot;, COUNT(*) FROM &quot;public&quot;.&quot;customers&quot;  m  GROUP BY &quot;CIN&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
+        <builtInIndicatorDefinition xmi:id="_J0BeQOXnEe63ns-usOBecA" name="Duplicate Count" label="Duplicate Count">
+          <taggedValue xmi:id="_J0BeQeXnEe63ns-usOBecA" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
+          <taggedValue xmi:id="_J0BeQuXnEe63ns-usOBecA" tag="Purpose" value="evaluates the number of duplicated records"/>
+          <sqlGenericExpression xmi:id="_J0BeQ-XnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
+          <sqlGenericExpression xmi:id="_J0BeROXnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_J0BeReXnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_J0BeRuXnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_J0BeR-XnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_J0BeSOXnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_J0BeSeXnEe63ns-usOBecA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:BinFrequencyIndicator" xmi:id="_GArviuXnEe63ns-usOBecA">
+      <indicators xsi:type="dataquality.indicators:BinFrequencyIndicator" xmi:id="_GArviuXnEe63ns-usOBecA" count="100000" computed="true" distinctValueCount="10" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000629AF27372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C75657871007E000300000000000000037371007E00020037A3F67371007E000500000000000000027371007E0002002BE22F71007E00067371007E0002009431D071007E00087371007E00020063245A71007E00067371007E00020032B5E871007E00087371007E00020047879D71007E00087371007E00020080C36B71007E00087371007E000200472D7B71007E00087371007E0002002C638071007E000878">
         <parameters xmi:id="_GArvi-XnEe63ns-usOBecA"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Bin_Frequency_Table_0.1.definition#_OCCCEBl4EeGMPdtm417kpw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_J0L2VeXnEe63ns-usOBecA" body="SELECT &quot;CIN&quot;, COUNT(*) FROM &quot;public&quot;.&quot;customers&quot; t  GROUP BY &quot;CIN&quot; ORDER BY COUNT(*) DESC LIMIT 10" language="PostgreSQL"/>
+        <builtInIndicatorDefinition xmi:id="_J0G90OXnEe63ns-usOBecA" name="Bin Frequency Table" label="Bin Frequency Table">
+          <taggedValue xmi:id="_J0G90eXnEe63ns-usOBecA" tag="Description" value="counts the number of records for each distinct record aggregates data according to parameters"/>
+          <taggedValue xmi:id="_J0G90uXnEe63ns-usOBecA" tag="Purpose" value="evaluates the most frequent records"/>
+          <sqlGenericExpression xmi:id="_J0G90-XnEe63ns-usOBecA" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_J0G91OXnEe63ns-usOBecA" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_J0G91eXnEe63ns-usOBecA" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_J0G91uXnEe63ns-usOBecA" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY COUNT(*) DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_J0G91-XnEe63ns-usOBecA" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_J0G92OXnEe63ns-usOBecA" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_J0G92eXnEe63ns-usOBecA" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+        </builtInIndicatorDefinition>
       </indicators>
     </results>
     <parameters xmi:id="_FruzOeXnEe63ns-usOBecA" dataFilter="_GNqbkOXnEe63ns-usOBecA" analysisType="Multiple Column Analysis"/>
