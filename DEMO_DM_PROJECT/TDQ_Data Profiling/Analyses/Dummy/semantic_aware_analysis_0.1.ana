@@ -1,0 +1,1789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_obXF4OXlEe63ns-usOBecA" name="semantic aware analysis" creationDate="2024-03-19T17:11:30.991+0530">
+  <clientDependency href="../../../metadata/connections/local_postgres14_0.1.item#_MZcEXeXGEe62OIVGi5sLvg"/>
+  <taggedValue xmi:id="_obXF4eXlEe63ns-usOBecA" tag="Status" value="Draft"/>
+  <taggedValue xmi:id="_obXF4uXlEe63ns-usOBecA" tag="Author" value="deepak@qlik.com"/>
+  <taggedValue xmi:id="_obXF4-XlEe63ns-usOBecA" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_obXF5OXlEe63ns-usOBecA" tag="Description" value=""/>
+  <taggedValue xmi:id="_obXF5eXlEe63ns-usOBecA" tag="Version" value="0.1"/>
+  <context xmi:id="_obXF5uXlEe63ns-usOBecA">
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+  </context>
+  <results xmi:id="_obXF5-XlEe63ns-usOBecA">
+    <resultMetadata xmi:id="_obXF6OXlEe63ns-usOBecA"/>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXF6eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXF6uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXF6-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXF7OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXF7eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXF7uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MeanIndicator" xmi:id="_obXF7-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXF8OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXF8eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXF8uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXF8-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXF9OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXF9eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MeanIndicator" xmi:id="_obXF9uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXF9-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXF-OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXF-eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXF-uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXF--XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXF_OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXF_eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXF_uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXF_-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGAOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGAeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGAuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGA-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGBOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGBeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGBuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGB-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGCOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXGCeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGCuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGC-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGDOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGDeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGDuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGD-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGEOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGEeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGEuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXGE-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGFOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGFeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGFuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGF-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGGOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGGeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGGuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGG-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGHOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXGHeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGHuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGH-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGIOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGIeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGIuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGI-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGJOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGJeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGJuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXGJ-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGKOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGKeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGKuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGK-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGLOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGLeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGLuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGL-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGMOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXGMeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGMuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGM-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGNOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGNeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGNuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGN-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGOOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGOeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGOuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXGO-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGPOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGPeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGPuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGP-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGQOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGQeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGQuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGQ-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGROXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXGReXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGRuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGR-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGSOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGSeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGSuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGS-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGTOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGTeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGTuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXGT-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGUOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGUeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGUuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGU-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGVOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGVeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGVuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGV-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGWOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXGWeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGWuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGW-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGXOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGXeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGXuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGX-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGYOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGYeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGYuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXGY-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGZOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGZeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGZuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGZ-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGaOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGaeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGauXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MeanIndicator" xmi:id="_obXGa-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGbOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGbeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGbuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGb-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGcOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGceXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MeanIndicator" xmi:id="_obXGcuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGc-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGdOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGdeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGduXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGd-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGeOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MeanIndicator" xmi:id="_obXGeeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGeuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGe-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGfOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGfeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGfuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGf-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MeanIndicator" xmi:id="_obXGgOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGgeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGguXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGg-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGhOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGheXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGhuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MeanIndicator" xmi:id="_obXGh-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGiOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGieXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGiuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGi-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGjOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGjeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MeanIndicator" xmi:id="_obXGjuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGj-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGkOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGkeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGkuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGk-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGlOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MeanIndicator" xmi:id="_obXGleXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGluXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGl-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGmOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGmeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGmuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGm-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGnOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGneXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXGnuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGn-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGoOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGoeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGouXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGo-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGpOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGpeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGpuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGp-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXGqOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGqeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGquXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGq-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGrOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGreXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGruXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGr-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGsOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGseXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXGsuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGs-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGtOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGteXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGtuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGt-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGuOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGueXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGuuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGu-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXGvOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGveXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGvuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGv-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGwOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGweXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGwuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGw-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGxOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGxeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXGxuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXGx-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXGyOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXGyeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXGyuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXGy-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXGzOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXGzeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXGzuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXGz-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXG0OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXG0eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXG0uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXG0-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXG1OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXG1eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXG1uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXG1-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXG2OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXG2eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXG2uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXG2-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXG3OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXG3eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXG3uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXG3-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXG4OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXG4eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXG4uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXG4-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXG5OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXG5eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXG5uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXG5-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXG6OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXG6eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXG6uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXG6-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXG7OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXG7eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXG7uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXG7-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXG8OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXG8eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXG8uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXG8-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXG9OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXG9eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXG9uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXG9-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXG-OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXG-eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXG-uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXG--XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXG_OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXG_eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXG_uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXG_-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MeanIndicator" xmi:id="_obXHAOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHAeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHAuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHA-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHBOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHBeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHBuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHB-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHCOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHCeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHCuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHC-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHDOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHDeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHDuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHD-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHEOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHEeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHEuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHE-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHFOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHFeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHFuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHF-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHGOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHGeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHGuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHG-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHHOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHHeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHHuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHH-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHIOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHIeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHIuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHI-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHJOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHJeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHJuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHJ-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHKOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHKeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHKuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHK-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHLOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHLeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHLuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHL-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHMOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHMeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHMuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHM-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHNOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHNeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHNuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHN-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHOOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHOeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHOuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHO-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHPOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHPeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHPuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHP-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHQOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHQeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHQuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHQ-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHROXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHReXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHRuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHR-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHSOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHSeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHSuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHS-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHTOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHTeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHTuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHT-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHUOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHUeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHUuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHU-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHVOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHVeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHVuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MeanIndicator" xmi:id="_obXHV-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHWOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHWeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHWuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHW-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHXOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHXeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHXuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHX-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHYOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHYeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHYuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHY-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHZOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHZeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHZuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHZ-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHaOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHaeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHauXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHa-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHbOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHbeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHbuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHb-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHcOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHceXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHcuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHc-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHdOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHdeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHduXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHd-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHeOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHeeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHeuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHe-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHfOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHfeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHfuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHf-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHgOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHgeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHguXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHg-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHhOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHheXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHhuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHh-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHiOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHieXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHiuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHi-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHjOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHjeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHjuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHj-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHkOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHkeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHkuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHk-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHlOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHleXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHluXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHl-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHmOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHmeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHmuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHm-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHnOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHneXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHnuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHn-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHoOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHoeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHouXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHo-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHpOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHpeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHpuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHp-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHqOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHqeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHquXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHq-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHrOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHreXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHruXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHr-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHsOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHseXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHsuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHs-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHtOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHteXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHtuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHt-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHuOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHueXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHuuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHu-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHvOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHveXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHvuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHv-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHwOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHweXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MeanIndicator" xmi:id="_obXHwuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHw-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHxOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHxeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXHxuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXHx-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXHyOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXHyeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXHyuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXHy-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXHzOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXHzeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXHzuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXHz-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXH0OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXH0eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXH0uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXH0-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXH1OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXH1eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXH1uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXH1-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXH2OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXH2eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXH2uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXH2-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXH3OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXH3eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXH3uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXH3-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXH4OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXH4eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXH4uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXH4-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXH5OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXH5eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXH5uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXH5-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXH6OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXH6eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXH6uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXH6-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXH7OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXH7eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXH7uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXH7-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXH8OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXH8eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXH8uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXH8-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXH9OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXH9eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXH9uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXH9-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXH-OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXH-eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXH-uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXH--XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXH_OXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXH_eXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXH_uXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXH_-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXIAOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXIAeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXIAuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXIA-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXIBOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXIBeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXIBuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXIB-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXICOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXICeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXICuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXIC-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXIDOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXIDeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXIDuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXID-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXIEOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXIEeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXIEuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXIE-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXIFOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXIFeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXIFuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXIF-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXIGOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MeanIndicator" xmi:id="_obXIGeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_obXIGuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_obXIG-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_obXIHOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_obXIHeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_obXIHuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_obXIH-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_obXIIOXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:MaxLengthIndicator" xmi:id="_obXIIeXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_obXIIuXlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_obXII-XlEe63ns-usOBecA">
+      <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_obXIJOXlEe63ns-usOBecA" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
