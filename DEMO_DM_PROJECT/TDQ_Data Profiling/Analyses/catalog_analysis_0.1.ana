@@ -11,10 +11,23 @@
     <analysedElements xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../metadata/connections/local_postgres14_0.1.item#_ffZTcOXEEe62OIVGi5sLvg"/>
   </context>
   <results xmi:id="_DCnAZ-XdEe6b7occNxr0Vw">
-    <resultMetadata xmi:id="_DCnAaOXdEe6b7occNxr0Vw"/>
-    <indicators xsi:type="dataquality.indicators.schema:CatalogIndicator" xmi:id="_DCnAaeXdEe6b7occNxr0Vw">
+    <resultMetadata xmi:id="_DCnAaOXdEe6b7occNxr0Vw" executionDate="2024-03-19T16:10:14.723+0530" executionDuration="169" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+    <indicators xsi:type="dataquality.indicators.schema:CatalogIndicator" xmi:id="_DCnAaeXdEe6b7occNxr0Vw" computed="true" tableCount="3" tableRowCount="300000" schemaCount="1">
       <analyzedElement xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../metadata/connections/local_postgres14_0.1.item#_ffZTcOXEEe62OIVGi5sLvg"/>
       <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Catalog_Overview_0.1.definition#_QwDiwMYUEd27NP4lvE0A4w"/>
+      <schemaIndicators xmi:id="_EhNFUOXdEe6b7occNxr0Vw" tableCount="3" tableRowCount="300000">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/local_postgres14_0.1.item#_ffZTceXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+        <tableIndicators xmi:id="_EhNsYOXdEe6b7occNxr0Vw" rowCount="100000" tableName="crm_customers">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_EhNsYeXdEe6b7occNxr0Vw" rowCount="100000" tableName="customers">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_EhNsYuXdEe6b7occNxr0Vw" rowCount="100000" tableName="customers_bkp">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+      </schemaIndicators>
     </indicators>
   </results>
   <parameters xmi:id="_DCnAauXdEe6b7occNxr0Vw" analysisType="Catalog Analysis"/>
