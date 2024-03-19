@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_Qz93cOXdEe6b7occNxr0Vw" name="redundancy analysis" creationDate="2024-03-19T16:11:35.664+0530">
+  <taggedValue xmi:id="_Qz93ceXdEe6b7occNxr0Vw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_Qz93cuXdEe6b7occNxr0Vw" tag="Author" value="deepak_dm@qlik.com"/>
+  <taggedValue xmi:id="_Qz93c-XdEe6b7occNxr0Vw" tag="Purpose"/>
+  <taggedValue xmi:id="_Qz93dOXdEe6b7occNxr0Vw" tag="Description"/>
+  <taggedValue xmi:id="_Qz93deXdEe6b7occNxr0Vw" tag="Version" value="0.1"/>
+  <context xmi:id="_Qz93duXdEe6b7occNxr0Vw"/>
+  <results xmi:id="_Qz93d-XdEe6b7occNxr0Vw">
+    <resultMetadata xmi:id="_Qz93eOXdEe6b7occNxr0Vw"/>
+  </results>
+  <parameters xmi:id="_Qz93eeXdEe6b7occNxr0Vw" analysisType="Columns Comparison Analysis"/>
+</dataquality.analysis:Analysis>
