@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.indicators.sql="http://dataquality.indicators.sql" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_Rd2bkOXVEe62OIVGi5sLvg" name="sample_bq_rules" creationDate="2024-03-19T15:14:23.110+0530">
+  <clientDependency href="../../metadata/connections/local_postgres14_0.1.item#_MZcEXeXGEe62OIVGi5sLvg"/>
+  <clientDependency href="../../TDQ_Libraries/Rules/SQL/Demo_DQ_Rule_0.1.rules#_Rd3psOXVEe62OIVGi5sLvg"/>
+  <taggedValue xmi:id="_Rd2bkeXVEe62OIVGi5sLvg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_Rd2bkuXVEe62OIVGi5sLvg" tag="Author" value="deepak_dm@qlik.com"/>
+  <taggedValue xmi:id="_Rd2bk-XVEe62OIVGi5sLvg" tag="Purpose"/>
+  <taggedValue xmi:id="_Rd2blOXVEe62OIVGi5sLvg" tag="Description"/>
+  <taggedValue xmi:id="_Rd2bleXVEe62OIVGi5sLvg" tag="Version" value="0.1"/>
+  <context xmi:id="_Rd2bluXVEe62OIVGi5sLvg">
+    <connection href="../../metadata/connections/local_postgres14_0.1.item#_2uXYoOW9Ee62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdTable" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAYOXEEe62OIVGi5sLvg"/>
+  </context>
+  <results xmi:id="_Rd2bl-XVEe62OIVGi5sLvg">
+    <resultMetadata xmi:id="_Rd2bmOXVEe62OIVGi5sLvg"/>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Rd2bmeXVEe62OIVGi5sLvg">
+      <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAYOXEEe62OIVGi5sLvg"/>
+      <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators.sql:WhereRuleIndicator" xmi:id="_Rd2bmuXVEe62OIVGi5sLvg">
+      <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAYOXEEe62OIVGi5sLvg"/>
+      <indicatorDefinition href="../../TDQ_Libraries/Rules/SQL/Demo_DQ_Rule_0.1.rules#_hXIKcA-ZEd6qupbF9NyF4w"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_Rd2bm-XVEe62OIVGi5sLvg" analysisType="Table Analysis"/>
+</dataquality.analysis:Analysis>
