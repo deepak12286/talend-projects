@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_Qz93cOXdEe6b7occNxr0Vw" name="redundancy analysis" creationDate="2024-03-19T16:11:35.664+0530" defaultContext="Default">
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_Qz93cOXdEe6b7occNxr0Vw" name="redundancy analysis" creationDate="2024-03-19T16:11:35.664+0530" defaultContext="Default">
+  <clientDependency href="../../../metadata/connections/local_postgres14_0.1.item#_MZcEXeXGEe62OIVGi5sLvg"/>
   <taggedValue xmi:id="_Qz93ceXdEe6b7occNxr0Vw" tag="Status" value="development"/>
   <taggedValue xmi:id="_Qz93cuXdEe6b7occNxr0Vw" tag="Author" value="deepak_dm@qlik.com"/>
   <taggedValue xmi:id="_Qz93c-XdEe6b7occNxr0Vw" tag="Purpose" value=""/>
@@ -8,14 +9,384 @@
   <taggedValue xmi:id="_ZR0NgeXdEe6b7occNxr0Vw" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
   <taggedValue xmi:id="_ZR0NhOXdEe6b7occNxr0Vw" tag="Ignore Null" value="false"/>
   <taggedValue xmi:id="_ZR0NheXdEe6b7occNxr0Vw" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
-  <context xmi:id="_Qz93duXdEe6b7occNxr0Vw"/>
+  <context xmi:id="_Qz93duXdEe6b7occNxr0Vw">
+    <connection href="../../../metadata/connections/local_postgres14_0.1.item#_2uXYoOW9Ee62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1McOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MdOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MeOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MfOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MgOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MhOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MiOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MjOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MkOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MlOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MmOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MnOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MoOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MpOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MqOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MrOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MsOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MtOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MuOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MvOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MwOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MxOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MyOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MzOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M0OXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M1OXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M2OXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M3OXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M4OXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M5OXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M6OXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M7OXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M8OXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M9OXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M-OXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M_OXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NAOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NBOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NCOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NDOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NEOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NFOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NGOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NHOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NIOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NJOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NKOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NLOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NMOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NNOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NOOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NPOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NQOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NROXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NSOXdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zg-XdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zh-XdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zi-XdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zj-XdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zk-XdEe6b7occNxr0Vw"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zl-XdEe6b7occNxr0Vw"/>
+  </context>
   <results xmi:id="_Qz93d-XdEe6b7occNxr0Vw">
     <resultMetadata xmi:id="_Qz93eOXdEe6b7occNxr0Vw"/>
     <indicators xsi:type="dataquality.indicators.columnset:RowMatchingIndicator" xmi:id="_ZR0NguXdEe6b7occNxr0Vw">
+      <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYOXEEe62OIVGi5sLvg"/>
       <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Row Comparison/Row_Comparison_0.1.definition#_jMh4gJE3Ed2HGNmGoaS-_w"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1McOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MdOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MeOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MfOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MgOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MhOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MiOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MjOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MkOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MlOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MmOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MnOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MoOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MpOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MqOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MrOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MsOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MtOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MuOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MvOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MwOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MxOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MyOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MzOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M0OXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M1OXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M2OXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M3OXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M4OXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M5OXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M6OXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M7OXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M8OXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M9OXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M-OXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M_OXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NAOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NBOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NCOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NDOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NEOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NFOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NGOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NHOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NIOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NJOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NKOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NLOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NMOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NNOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NOOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NPOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NQOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NROXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NSOXdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zg-XdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zh-XdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zi-XdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zj-XdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zk-XdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zl-XdEe6b7occNxr0Vw"/>
     </indicators>
     <indicators xsi:type="dataquality.indicators.columnset:RowMatchingIndicator" xmi:id="_ZR0Ng-XdEe6b7occNxr0Vw">
+      <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/local_postgres14_0.1.item#_pVDAleXdEe6b7occNxr0Vw"/>
       <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Row Comparison/Row_Comparison_0.1.definition#_jMh4gJE3Ed2HGNmGoaS-_w"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1McOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MdOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MeOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MfOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MgOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MhOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MiOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MjOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MkOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MlOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MmOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MnOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MoOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MpOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MqOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MrOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MsOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MtOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MuOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MvOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MwOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MxOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MyOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1MzOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M0OXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M1OXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M2OXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M3OXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M4OXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M5OXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M6OXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M7OXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M8OXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M9OXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M-OXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1M_OXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NAOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NBOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NCOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NDOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NEOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NFOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NGOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NHOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NIOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NJOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NKOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NLOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NMOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NNOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NOOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NPOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NQOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NROXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1NSOXdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zg-XdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zh-XdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zi-XdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zj-XdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zk-XdEe6b7occNxr0Vw"/>
+      <columnSetA href="../../../metadata/connections/local_postgres14_0.1.item#_rc1zl-XdEe6b7occNxr0Vw"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+      <columnSetB href="../../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
     </indicators>
   </results>
   <parameters xmi:id="_Qz93eeXdEe6b7occNxr0Vw" analysisType="Columns Comparison Analysis"/>
