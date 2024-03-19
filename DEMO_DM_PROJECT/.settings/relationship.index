@@ -49,4 +49,19 @@
     "version" : "Latest",
     "type" : "report"
   } ]
+}, {
+  "baseItem" : {
+    "id" : "_aBLbcOW9Ee62OIVGi5sLvg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_Mf_KgOXBEe62OIVGi5sLvg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_Mf_KgOXBEe62OIVGi5sLvg - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 } ]
