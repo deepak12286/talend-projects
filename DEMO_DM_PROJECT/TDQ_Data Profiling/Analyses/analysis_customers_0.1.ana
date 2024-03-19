@@ -21,7 +21,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
     </context>
     <results xmi:id="_s393F-XEEe62OIVGi5sLvg">
-      <resultMetadata xmi:id="_s393GOXEEe62OIVGi5sLvg" executionDate="2024-03-19T14:53:12.318+0530" executionDuration="839" message="" executionNumber="4" lastRunOk="true" lastExecutionNumberOk="4"/>
+      <resultMetadata xmi:id="_s393GOXEEe62OIVGi5sLvg" executionDate="2024-03-19T14:54:12.249+0530" executionDuration="465" message="" executionNumber="5" lastRunOk="true" lastExecutionNumberOk="5"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_MZcEUOXGEe62OIVGi5sLvg" count="500" computed="true">
         <parameters xmi:id="_MZcEUeXGEe62OIVGi5sLvg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
@@ -142,7 +142,7 @@
           <sqlGenericExpression xmi:id="__dt7J-XNEe62OIVGi5sLvg" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="__Vo9OuXNEe62OIVGi5sLvg" name="India Mobile Number" count="500" computed="true" inValidRow="true" matchingValueCount="51" notMatchingValueCount="449">
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="__Vo9OuXNEe62OIVGi5sLvg" name="India Mobile Number" count="500" computed="true" inValidRow="true" matchingValueCount="43" notMatchingValueCount="457">
         <parameters xmi:id="__Vo9O-XNEe62OIVGi5sLvg">
           <dataValidDomain xmi:id="__Vo9POXNEe62OIVGi5sLvg">
             <patterns href="../../TDQ_Libraries/Patterns/Regex/phone/India_Mobile_Number_0.1.pattern#_sLVrgOXNEe62OIVGi5sLvg"/>
@@ -211,7 +211,7 @@
           <sqlGenericExpression xmi:id="__eO4h-XNEe62OIVGi5sLvg" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="__Vo9R-XNEe62OIVGi5sLvg" name="India Mobile Number" count="500" computed="true" inValidRow="true" matchingValueCount="44" notMatchingValueCount="456">
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="__Vo9R-XNEe62OIVGi5sLvg" name="India Mobile Number" count="500" computed="true" validRow="true" matchingValueCount="50" notMatchingValueCount="450">
         <parameters xmi:id="__Vo9SOXNEe62OIVGi5sLvg">
           <dataValidDomain xmi:id="__Vo9SeXNEe62OIVGi5sLvg">
             <patterns href="../../TDQ_Libraries/Patterns/Regex/phone/India_Mobile_Number_0.1.pattern#_sLVrgOXNEe62OIVGi5sLvg"/>
