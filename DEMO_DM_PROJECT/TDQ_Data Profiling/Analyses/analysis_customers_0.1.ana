@@ -2,13 +2,15 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <dataquality.analysis:Analysis xmi:id="_s393EOXEEe62OIVGi5sLvg" name="analysis_customers" supplierDependency="_phwksOXOEe62OIVGi5sLvg" creationDate="2024-03-19T13:15:47.499+0530" defaultContext="Default">
     <clientDependency href="../../metadata/connections/local_postgres14_0.1.item#_MZcEXeXGEe62OIVGi5sLvg"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/id/IN_PAN_Card_0.1.pattern#_MeF60OXGEe62OIVGi5sLvg"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/phone/India_Mobile_Number_0.1.pattern#__V0jYOXNEe62OIVGi5sLvg"/>
     <taggedValue xmi:id="_s393EeXEEe62OIVGi5sLvg" tag="Status" value="development"/>
     <taggedValue xmi:id="_s393EuXEEe62OIVGi5sLvg" tag="Author" value="deepak_dm@qlik.com"/>
     <taggedValue xmi:id="_s393E-XEEe62OIVGi5sLvg" tag="Purpose" value=""/>
     <taggedValue xmi:id="_s393FOXEEe62OIVGi5sLvg" tag="Description" value=""/>
     <taggedValue xmi:id="_s393FeXEEe62OIVGi5sLvg" tag="Version" value="0.1"/>
     <taggedValue xmi:id="_MZbdQeXGEe62OIVGi5sLvg" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
-    <taggedValue xmi:id="_MZbdQuXGEe62OIVGi5sLvg" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_MZbdQuXGEe62OIVGi5sLvg" tag="PREVIEW_ROW_NUMBER" value="500"/>
     <taggedValue xmi:id="_MZbdQ-XGEe62OIVGi5sLvg" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
     <taggedValue xmi:id="_MZcEXuXGEe62OIVGi5sLvg" tag="Is Use Sample Data" value="true"/>
     <taggedValue xmi:id="_c-Lk0OXNEe62OIVGi5sLvg" tag="false" value="true"/>
@@ -219,7 +221,7 @@
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
       </indicators>
     </results>
-    <parameters xmi:id="_s393GeXEEe62OIVGi5sLvg" dataFilter="_MePr0OXGEe62OIVGi5sLvg" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
+    <parameters xmi:id="_s393GeXEEe62OIVGi5sLvg" dataFilter="_MePr0OXGEe62OIVGi5sLvg" analysisType="Multiple Column Analysis" executionLanguage="Java" sampleDataShowWay="n random rows"/>
     <contextType xmi:id="_MZbdQOXGEe62OIVGi5sLvg" confirmationNeeded="false" hide="false" name="Default"/>
   </dataquality.analysis:Analysis>
   <orgomg.cwm.objectmodel.core:Dependency xmi:id="_phwksOXOEe62OIVGi5sLvg" kind="Usage" supplier="_s393EOXEEe62OIVGi5sLvg">
