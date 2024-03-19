@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_Dn5pUOXeEe6b7occNxr0Vw" name="businessrule analysis" creationDate="2024-03-19T16:17:17.654+0530">
-  <clientDependency href="../../../metadata/connections/local_postgres14_0.1.item#_MZcEXeXGEe62OIVGi5sLvg"/>
-  <taggedValue xmi:id="_Dn5pUeXeEe6b7occNxr0Vw" tag="Status" value="development"/>
-  <taggedValue xmi:id="_Dn5pUuXeEe6b7occNxr0Vw" tag="Author" value="deepak_dm@qlik.com"/>
-  <taggedValue xmi:id="_Dn5pU-XeEe6b7occNxr0Vw" tag="Purpose"/>
-  <taggedValue xmi:id="_Dn5pVOXeEe6b7occNxr0Vw" tag="Description"/>
-  <taggedValue xmi:id="_Dn5pVeXeEe6b7occNxr0Vw" tag="Version" value="0.1"/>
-  <context xmi:id="_Dn5pVuXeEe6b7occNxr0Vw">
-    <connection href="../../../metadata/connections/local_postgres14_0.1.item#_2uXYoOW9Ee62OIVGi5sLvg"/>
-    <analysedElements xsi:type="relational:TdTable" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYOXEEe62OIVGi5sLvg"/>
-  </context>
-  <results xmi:id="_Dn5pV-XeEe6b7occNxr0Vw">
-    <resultMetadata xmi:id="_Dn5pWOXeEe6b7occNxr0Vw"/>
-    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Dn5pWeXeEe6b7occNxr0Vw">
-      <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYOXEEe62OIVGi5sLvg"/>
-      <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-    </indicators>
-  </results>
-  <parameters xmi:id="_Dn5pWuXeEe6b7occNxr0Vw" analysisType="Table Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_Dn5pUOXeEe6b7occNxr0Vw" name="businessrule analysis" creationDate="2024-03-19T16:17:17.654+0530" defaultContext="Default">
+    <clientDependency href="../../../metadata/connections/local_postgres14_0.1.item#_MZcEXeXGEe62OIVGi5sLvg"/>
+    <taggedValue xmi:id="_Dn5pUeXeEe6b7occNxr0Vw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_Dn5pUuXeEe6b7occNxr0Vw" tag="Author" value="deepak_dm@qlik.com"/>
+    <taggedValue xmi:id="_Dn5pU-XeEe6b7occNxr0Vw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_Dn5pVOXeEe6b7occNxr0Vw" tag="Description" value=""/>
+    <taggedValue xmi:id="_Dn5pVeXeEe6b7occNxr0Vw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_b5r1YOXiEe63ns-usOBecA" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_b5wt4OXiEe63ns-usOBecA" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <context xmi:id="_Dn5pVuXeEe6b7occNxr0Vw">
+      <connection href="../../../metadata/connections/local_postgres14_0.1.item#_2uXYoOW9Ee62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYOXEEe62OIVGi5sLvg"/>
+    </context>
+    <results xmi:id="_Dn5pV-XeEe6b7occNxr0Vw">
+      <resultMetadata xmi:id="_Dn5pWOXeEe6b7occNxr0Vw"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Dn5pWeXeEe6b7occNxr0Vw">
+        <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYOXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_Dn5pWuXeEe6b7occNxr0Vw" dataFilter="_cB2S4OXiEe63ns-usOBecA" analysisType="Table Analysis"/>
+    <contextType xmi:id="_b5rOUOXiEe63ns-usOBecA" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_cB2S4OXiEe63ns-usOBecA" name="businessrule analysis">
+    <ranges xmi:id="_cB2S4eXiEe63ns-usOBecA">
+      <expressions xmi:id="_cB2S4uXiEe63ns-usOBecA">
+        <expression xsi:type="relational:TdExpression" xmi:id="_cB2S4-XiEe63ns-usOBecA" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
