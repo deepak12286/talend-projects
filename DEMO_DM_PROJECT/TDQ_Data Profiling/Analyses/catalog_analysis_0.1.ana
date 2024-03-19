@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.schema="http://dataquality.indicators.schema" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmi:id="_DCnAYOXdEe6b7occNxr0Vw" name="catalog analysis" creationDate="2024-03-19T16:10:04.200+0530">
+  <clientDependency href="../../metadata/connections/local_postgres14_0.1.item#_MZcEXeXGEe62OIVGi5sLvg"/>
+  <taggedValue xmi:id="_DCnAYeXdEe6b7occNxr0Vw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_DCnAYuXdEe6b7occNxr0Vw" tag="Author" value="deepak_dm@qlik.com"/>
+  <taggedValue xmi:id="_DCnAY-XdEe6b7occNxr0Vw" tag="Purpose"/>
+  <taggedValue xmi:id="_DCnAZOXdEe6b7occNxr0Vw" tag="Description"/>
+  <taggedValue xmi:id="_DCnAZeXdEe6b7occNxr0Vw" tag="Version" value="0.1"/>
+  <context xmi:id="_DCnAZuXdEe6b7occNxr0Vw">
+    <connection href="../../metadata/connections/local_postgres14_0.1.item#_2uXYoOW9Ee62OIVGi5sLvg"/>
+    <analysedElements xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../metadata/connections/local_postgres14_0.1.item#_ffZTcOXEEe62OIVGi5sLvg"/>
+  </context>
+  <results xmi:id="_DCnAZ-XdEe6b7occNxr0Vw">
+    <resultMetadata xmi:id="_DCnAaOXdEe6b7occNxr0Vw"/>
+    <indicators xsi:type="dataquality.indicators.schema:CatalogIndicator" xmi:id="_DCnAaeXdEe6b7occNxr0Vw">
+      <analyzedElement xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../metadata/connections/local_postgres14_0.1.item#_ffZTcOXEEe62OIVGi5sLvg"/>
+      <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Catalog_Overview_0.1.definition#_QwDiwMYUEd27NP4lvE0A4w"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_DCnAauXdEe6b7occNxr0Vw" analysisType="Catalog Analysis"/>
+</dataquality.analysis:Analysis>
