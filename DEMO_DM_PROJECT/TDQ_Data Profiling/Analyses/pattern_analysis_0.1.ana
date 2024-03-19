@@ -1,13 +1,1311 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_cHfFAOXbEe6b7occNxr0Vw" name="pattern analysis" creationDate="2024-03-19T15:58:33.397+0530">
-  <taggedValue xmi:id="_cHfFAeXbEe6b7occNxr0Vw" tag="Status" value="development"/>
-  <taggedValue xmi:id="_cHfFAuXbEe6b7occNxr0Vw" tag="Author" value="deepak_dm@qlik.com"/>
-  <taggedValue xmi:id="_cHfFA-XbEe6b7occNxr0Vw" tag="Purpose"/>
-  <taggedValue xmi:id="_cHfFBOXbEe6b7occNxr0Vw" tag="Description"/>
-  <taggedValue xmi:id="_cHfFBeXbEe6b7occNxr0Vw" tag="Version" value="0.1"/>
-  <context xmi:id="_cHfFBuXbEe6b7occNxr0Vw"/>
-  <results xmi:id="_cHfFB-XbEe6b7occNxr0Vw">
-    <resultMetadata xmi:id="_cHfFCOXbEe6b7occNxr0Vw"/>
-  </results>
-  <parameters xmi:id="_cHfFCeXbEe6b7occNxr0Vw" analysisType="Multiple Column Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_cHfFAOXbEe6b7occNxr0Vw" name="pattern analysis" creationDate="2024-03-19T15:58:33.397+0530" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/local_postgres14_0.1.item#_MZcEXeXGEe62OIVGi5sLvg"/>
+    <taggedValue xmi:id="_cHfFAeXbEe6b7occNxr0Vw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_cHfFAuXbEe6b7occNxr0Vw" tag="Author" value="deepak_dm@qlik.com"/>
+    <taggedValue xmi:id="_cHfFA-XbEe6b7occNxr0Vw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_cHfFBOXbEe6b7occNxr0Vw" tag="Description" value=""/>
+    <taggedValue xmi:id="_cHfFBeXbEe6b7occNxr0Vw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_c7OPEOXbEe6b7occNxr0Vw" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_c7OPEeXbEe6b7occNxr0Vw" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_c7OPEuXbEe6b7occNxr0Vw" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_c7cRgOXbEe6b7occNxr0Vw" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_cHfFBuXbEe6b7occNxr0Vw">
+      <connection href="../../metadata/connections/local_postgres14_0.1.item#_2uXYoOW9Ee62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+    </context>
+    <results xmi:id="_cHfFB-XbEe6b7occNxr0Vw">
+      <resultMetadata xmi:id="_cHfFCOXbEe6b7occNxr0Vw"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7OPE-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7OPFOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7OPFeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7OPFuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7OPF-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7OPGOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7OPGeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7OPGuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAYeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7WK4eXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WK4uXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7WK4-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WK5OXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7WK5eXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WK5uXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7WK5-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WK6OXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAZeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7Wx8eXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Wx8uXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7Wx8-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Wx9OXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7Wx9eXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Wx9uXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7Wx9-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Wx-OXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAaeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7Wx-uXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Wx--XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7Wx_OXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Wx_eXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7Wx_uXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Wx_-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7WyAOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyAeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAbeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7WyA-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyBOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7WyBeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyBuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7WyB-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyCOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7WyCeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyCuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAceXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7WyDOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyDeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7WyDuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyD-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7WyEOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyEeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7WyEuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyE-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAdeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7WyFeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyFuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7WyF-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyGOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7WyGeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyGuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7WyG-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyHOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAeeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7WyHuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyH-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7WyIOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyIeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7WyIuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyI-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7WyJOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyJeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAfeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7WyJ-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyKOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7WyKeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyKuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7WyK-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyLOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7WyLeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyLuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAgeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7WyMOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyMeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7WyMuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyM-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7WyNOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyNeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7WyNuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyN-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAheXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7WyOeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyOuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7WyO-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyPOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7WyPeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyPuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7WyP-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyQOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAieXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7WyQuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyQ-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7WyROXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyReXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7WyRuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyR-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7WySOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WySeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAjeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7WyS-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyTOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7WyTeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyTuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7WyT-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyUOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7WyUeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyUuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAkeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7WyVOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyVeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7WyVuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyV-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7WyWOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyWeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7WyWuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7WyW-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7XZAOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZAeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7XZAuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZA-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7XZBOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZBeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7XZBuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZB-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAmeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7XZCeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZCuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7XZC-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZDOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7XZDeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZDuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7XZD-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZEOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAneXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7XZEuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZE-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7XZFOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZFeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7XZFuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZF-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7XZGOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZGeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAoeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7XZG-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZHOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7XZHeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZHuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7XZH-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZIOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7XZIeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZIuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlApeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7XZJOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZJeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7XZJuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZJ-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7XZKOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZKeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7XZKuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZK-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAqeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7XZLeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZLuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7XZL-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZMOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7XZMeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZMuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7XZM-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZNOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAreXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7XZNuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZN-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7XZOOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZOeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7XZOuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZO-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7XZPOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZPeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAseXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7XZP-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZQOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7XZQeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZQuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7XZQ-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZROXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7XZReXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZRuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAteXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7XZSOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZSeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7XZSuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZS-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7XZTOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZTeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7XZTuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZT-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAueXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7XZUeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZUuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7XZU-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZVOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7XZVeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZVuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7XZV-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZWOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAveXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7XZWuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZW-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7XZXOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZXeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7XZXuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZX-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7XZYOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZYeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAweXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7XZY-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZZOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7XZZeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZZuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7XZZ-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZaOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7XZaeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZauXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAxeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7XZbOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZbeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7XZbuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZb-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7XZcOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7XZceXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YAEOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAEeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAyeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YAE-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAFOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YAFeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAFuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YAF-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAGOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YAGeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAGuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAzeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YAHOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAHeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YAHuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAH-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YAIOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAIeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YAIuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAI-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA0eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YAJeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAJuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YAJ-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAKOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YAKeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAKuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YAK-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YALOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA1eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YALuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAL-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YAMOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAMeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YAMuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAM-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YANOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YANeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA2eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YAN-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAOOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YAOeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAOuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YAO-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAPOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YAPeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAPuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA3eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YAQOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAQeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YAQuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAQ-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YAROXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAReXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YARuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAR-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA4eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YASeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YASuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YAS-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YATOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YATeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YATuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YAT-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAUOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA5eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YAUuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAU-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YAVOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAVeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YAVuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAV-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YAWOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAWeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA6eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YAW-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAXOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YAXeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAXuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YAX-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAYOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YAYeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAYuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA7eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YAZOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAZeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YAZuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAZ-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YAaOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAaeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YAauXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YAa-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA8eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YnIOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnIeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YnIuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnI-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YnJOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnJeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YnJuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnJ-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA9eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YnKeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnKuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YnK-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnLOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YnLeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnLuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YnL-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnMOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA-eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YnMuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnM-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YnNOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnNeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YnNuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnN-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YnOOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnOeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlA_eXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YnO-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnPOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YnPeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnPuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YnP-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnQOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YnQeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnQuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YnQ-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnROXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YnReXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnRuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YnR-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnSOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YnSeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnSuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YnS-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnTOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YnTeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnTuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YnT-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnUOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YnUeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnUuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBCeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YnVOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnVeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YnVuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnV-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YnWOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnWeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YnWuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnW-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBDeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7YnXeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnXuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7YnX-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnYOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7YnYeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnYuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7YnY-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7YnZOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBEeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7ZOMOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOMeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7ZOMuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOM-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7ZONOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZONeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7ZONuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZON-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBFeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7ZOOeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOOuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7ZOO-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOPOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7ZOPeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOPuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7ZOP-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOQOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBGeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7ZOQuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOQ-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7ZOROXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOReXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7ZORuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOR-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7ZOSOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOSeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBHeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7ZOS-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOTOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7ZOTeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOTuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7ZOT-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOUOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7ZOUeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOUuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBIeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7ZOVOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOVeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7ZOVuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOV-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7ZOWOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOWeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7ZOWuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOW-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBJeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7ZOXeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOXuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7ZOX-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOYOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7ZOYeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOYuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7ZOY-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOZOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBKeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7ZOZuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOZ-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7ZOaOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOaeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7ZOauXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOa-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7ZObOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZObeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBLeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7ZOb-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOcOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7ZOceXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOcuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7ZOc-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOdOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7ZOdeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOduXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBMeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7ZOeOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOeeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7ZOeuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOe-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7ZOfOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOfeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7ZOfuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOf-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBNeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7ZOgeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOguXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7ZOg-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOhOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7ZOheXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOhuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7ZOh-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOiOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBOeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7ZOiuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOi-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7ZOjOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOjeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7ZOjuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOj-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7ZOkOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7ZOkeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBPeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7Z1QOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1QeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7Z1QuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1Q-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7Z1ROXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1ReXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7Z1RuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1R-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBQeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7Z1SeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1SuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7Z1S-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1TOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7Z1TeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1TuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7Z1T-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1UOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBReXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7Z1UuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1U-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7Z1VOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1VeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7Z1VuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1V-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7Z1WOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1WeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBSeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7Z1W-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1XOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7Z1XeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1XuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7Z1X-XbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1YOXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7Z1YeXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1YuXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBTeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_c7Z1ZOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1ZeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_c7Z1ZuXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1Z-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_c7Z1aOXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1aeXbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_c7Z1auXbEe6b7occNxr0Vw">
+        <parameters xmi:id="_c7Z1a-XbEe6b7occNxr0Vw"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBUeXEEe62OIVGi5sLvg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_cHfFCeXbEe6b7occNxr0Vw" dataFilter="_dEzB0OXbEe6b7occNxr0Vw" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_c7NoAOXbEe6b7occNxr0Vw" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_dEzB0OXbEe6b7occNxr0Vw" name="pattern analysis">
+    <ranges xmi:id="_dEzo4OXbEe6b7occNxr0Vw">
+      <expressions xmi:id="_dEzo4eXbEe6b7occNxr0Vw">
+        <expression xsi:type="relational:TdExpression" xmi:id="_dEzo4uXbEe6b7occNxr0Vw" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
