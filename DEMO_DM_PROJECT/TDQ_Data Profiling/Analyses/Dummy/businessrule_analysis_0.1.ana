@@ -16,6 +16,14 @@
     <results xmi:id="_Dn5pV-XeEe6b7occNxr0Vw">
       <resultMetadata xmi:id="_Dn5pWOXeEe6b7occNxr0Vw"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Dn5pWeXeEe6b7occNxr0Vw">
+        <parameters xmi:id="_chO9kOXiEe63ns-usOBecA">
+          <indicatorValidDomain xmi:id="_e-LhIOXiEe63ns-usOBecA" name="Indicator threshold">
+            <ranges xmi:id="_e-MvQOXiEe63ns-usOBecA" name="Value Threshold">
+              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_e-MvQeXiEe63ns-usOBecA" value="1"/>
+              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_e-MvQuXiEe63ns-usOBecA" value="1000"/>
+            </ranges>
+          </indicatorValidDomain>
+        </parameters>
         <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/local_postgres14_0.1.item#_jWlAYOXEEe62OIVGi5sLvg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
       </indicators>
