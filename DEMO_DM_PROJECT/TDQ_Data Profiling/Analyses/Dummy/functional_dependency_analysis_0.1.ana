@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_T2BrgOXjEe63ns-usOBecA" name="functional dependency analysis" creationDate="2024-03-19T16:54:53.760+0530">
+  <taggedValue xmi:id="_T2BrgeXjEe63ns-usOBecA" tag="Status" value="development"/>
+  <taggedValue xmi:id="_T2BrguXjEe63ns-usOBecA" tag="Author" value="deepak_dm@qlik.com"/>
+  <taggedValue xmi:id="_T2Brg-XjEe63ns-usOBecA" tag="Purpose"/>
+  <taggedValue xmi:id="_T2BrhOXjEe63ns-usOBecA" tag="Description"/>
+  <taggedValue xmi:id="_T2BrheXjEe63ns-usOBecA" tag="Version" value="0.1"/>
+  <context xmi:id="_T2BrhuXjEe63ns-usOBecA"/>
+  <results xmi:id="_T2Brh-XjEe63ns-usOBecA">
+    <resultMetadata xmi:id="_T2BriOXjEe63ns-usOBecA"/>
+  </results>
+  <parameters xmi:id="_T2BrieXjEe63ns-usOBecA" analysisType="Functional Dependency"/>
+</dataquality.analysis:Analysis>
