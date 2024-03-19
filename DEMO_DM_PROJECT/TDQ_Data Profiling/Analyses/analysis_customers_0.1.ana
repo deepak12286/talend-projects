@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <dataquality.analysis:Analysis xmi:id="_s393EOXEEe62OIVGi5sLvg" name="analysis_customers" supplierDependency="_phwksOXOEe62OIVGi5sLvg" creationDate="2024-03-19T13:15:47.499+0530" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/local_postgres14_0.1.item#_MZcEXeXGEe62OIVGi5sLvg"/>
     <taggedValue xmi:id="_s393EeXEEe62OIVGi5sLvg" tag="Status" value="development"/>
     <taggedValue xmi:id="_s393EuXEEe62OIVGi5sLvg" tag="Author" value="deepak_dm@qlik.com"/>
     <taggedValue xmi:id="_s393E-XEEe62OIVGi5sLvg" tag="Purpose" value=""/>
@@ -12,6 +13,7 @@
     <taggedValue xmi:id="_MZcEXuXGEe62OIVGi5sLvg" tag="Is Use Sample Data" value="true"/>
     <taggedValue xmi:id="_c-Lk0OXNEe62OIVGi5sLvg" tag="false" value="true"/>
     <context xmi:id="_s393FuXEEe62OIVGi5sLvg">
+      <connection href="../../metadata/connections/local_postgres14_0.1.item#_2uXYoOW9Ee62OIVGi5sLvg"/>
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlAleXEEe62OIVGi5sLvg"/>
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBAeXEEe62OIVGi5sLvg"/>
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/local_postgres14_0.1.item#_jWlBBeXEEe62OIVGi5sLvg"/>
