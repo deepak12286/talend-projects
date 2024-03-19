@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_s393EOXEEe62OIVGi5sLvg" name="analysis_customers" creationDate="2024-03-19T13:15:47.499+0530">
+  <taggedValue xmi:id="_s393EeXEEe62OIVGi5sLvg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_s393EuXEEe62OIVGi5sLvg" tag="Author" value="deepak_dm@qlik.com"/>
+  <taggedValue xmi:id="_s393E-XEEe62OIVGi5sLvg" tag="Purpose"/>
+  <taggedValue xmi:id="_s393FOXEEe62OIVGi5sLvg" tag="Description"/>
+  <taggedValue xmi:id="_s393FeXEEe62OIVGi5sLvg" tag="Version" value="0.1"/>
+  <context xmi:id="_s393FuXEEe62OIVGi5sLvg"/>
+  <results xmi:id="_s393F-XEEe62OIVGi5sLvg">
+    <resultMetadata xmi:id="_s393GOXEEe62OIVGi5sLvg"/>
+  </results>
+  <parameters xmi:id="_s393GeXEEe62OIVGi5sLvg" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
