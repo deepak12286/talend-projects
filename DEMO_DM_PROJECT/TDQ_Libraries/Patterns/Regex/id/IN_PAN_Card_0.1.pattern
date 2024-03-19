@@ -3,8 +3,8 @@
   <dataquality.domain.pattern:Pattern xmi:id="_cuomkOXFEe62OIVGi5sLvg" name="IN PAN Card" supplierDependency="_MeF60OXGEe62OIVGi5sLvg">
     <taggedValue xmi:id="_cuomkeXFEe62OIVGi5sLvg" tag="Status" value="development"/>
     <taggedValue xmi:id="_cuomkuXFEe62OIVGi5sLvg" tag="Author" value="deepak_dm@qlik.com"/>
-    <taggedValue xmi:id="_cuomk-XFEe62OIVGi5sLvg" tag="Purpose"/>
-    <taggedValue xmi:id="_cuomlOXFEe62OIVGi5sLvg" tag="Description"/>
+    <taggedValue xmi:id="_cuomk-XFEe62OIVGi5sLvg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_cuomlOXFEe62OIVGi5sLvg" tag="Description" value=""/>
     <taggedValue xmi:id="_cuomleXFEe62OIVGi5sLvg" tag="Version" value="0.1"/>
     <taggedValue xmi:id="_cuomluXFEe62OIVGi5sLvg" tag="Validation_Status" value="true"/>
     <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_cuoml-XFEe62OIVGi5sLvg" expressionType="REGEXP">
