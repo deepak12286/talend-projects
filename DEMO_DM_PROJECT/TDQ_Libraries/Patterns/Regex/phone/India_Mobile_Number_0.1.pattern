@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.domain.pattern:Pattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmi:id="_sLVrgOXNEe62OIVGi5sLvg" name="India Mobile Number">
-  <taggedValue xmi:id="_sLVrgeXNEe62OIVGi5sLvg" tag="Status" value="development"/>
-  <taggedValue xmi:id="_sLVrguXNEe62OIVGi5sLvg" tag="Author" value="deepak_dm@qlik.com"/>
-  <taggedValue xmi:id="_sLVrg-XNEe62OIVGi5sLvg" tag="Purpose"/>
-  <taggedValue xmi:id="_sLVrhOXNEe62OIVGi5sLvg" tag="Description"/>
-  <taggedValue xmi:id="_sLVrheXNEe62OIVGi5sLvg" tag="Version" value="0.1"/>
-  <taggedValue xmi:id="_sLVrhuXNEe62OIVGi5sLvg" tag="Validation_Status" value="true"/>
-  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_sLVrh-XNEe62OIVGi5sLvg" expressionType="REGEXP">
-    <expression xmi:id="_sLVriOXNEe62OIVGi5sLvg" body="'^[789]\d{9}$'" language="SQL"/>
-  </components>
-</dataquality.domain.pattern:Pattern>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.domain.pattern:Pattern xmi:id="_sLVrgOXNEe62OIVGi5sLvg" name="India Mobile Number" supplierDependency="__V0jYOXNEe62OIVGi5sLvg">
+    <taggedValue xmi:id="_sLVrgeXNEe62OIVGi5sLvg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_sLVrguXNEe62OIVGi5sLvg" tag="Author" value="deepak_dm@qlik.com"/>
+    <taggedValue xmi:id="_sLVrg-XNEe62OIVGi5sLvg" tag="Purpose"/>
+    <taggedValue xmi:id="_sLVrhOXNEe62OIVGi5sLvg" tag="Description"/>
+    <taggedValue xmi:id="_sLVrheXNEe62OIVGi5sLvg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_sLVrhuXNEe62OIVGi5sLvg" tag="Validation_Status" value="true"/>
+    <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_sLVrh-XNEe62OIVGi5sLvg" expressionType="REGEXP">
+      <expression xmi:id="_sLVriOXNEe62OIVGi5sLvg" body="'^[789]\d{9}$'" language="SQL"/>
+    </components>
+  </dataquality.domain.pattern:Pattern>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="__V0jYOXNEe62OIVGi5sLvg" kind="Usage" supplier="_sLVrgOXNEe62OIVGi5sLvg">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/analysis_customers_0.1.ana#_s393EOXEEe62OIVGi5sLvg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>
