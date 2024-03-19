@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_ME8kF-XoEe63ns-usOBecA" name="column correlation" creationDate="2024-03-19T17:29:49.329+0530">
+  <taggedValue xmi:id="_ME8kGOXoEe63ns-usOBecA" tag="Status" value="development"/>
+  <taggedValue xmi:id="_ME8kGeXoEe63ns-usOBecA" tag="Author" value="deepak_dm@qlik.com"/>
+  <taggedValue xmi:id="_ME8kGuXoEe63ns-usOBecA" tag="Purpose"/>
+  <taggedValue xmi:id="_ME8kG-XoEe63ns-usOBecA" tag="Description"/>
+  <taggedValue xmi:id="_ME8kHOXoEe63ns-usOBecA" tag="Version" value="0.1"/>
+  <context xmi:id="_ME8kHeXoEe63ns-usOBecA"/>
+  <results xmi:id="_ME8kHuXoEe63ns-usOBecA">
+    <resultMetadata xmi:id="_ME8kH-XoEe63ns-usOBecA"/>
+    <indicators xsi:type="dataquality.indicators.columnset:CountAvgNullIndicator" xmi:id="_ME8kIOXoEe63ns-usOBecA">
+      <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Correlation/Averaged_Multiple_Column_Frequency_Table_0.1.definition#_9GKxAamWEd2LEfr3zBgTzA"/>
+      <rowCountIndicator xmi:id="_ME8kIeXoEe63ns-usOBecA"/>
+      <uniqueCountIndicator xmi:id="_ME8kIuXoEe63ns-usOBecA"/>
+      <distinctCountIndicator xmi:id="_ME8kI-XoEe63ns-usOBecA"/>
+      <duplicateCountIndicator xmi:id="_ME8kJOXoEe63ns-usOBecA"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_ME8kJeXoEe63ns-usOBecA" analysisType="Column Correlation Analysis"/>
+</dataquality.analysis:Analysis>
