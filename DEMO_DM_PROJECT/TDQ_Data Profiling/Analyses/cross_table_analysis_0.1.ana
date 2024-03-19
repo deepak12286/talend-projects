@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_1oYYQOXOEe62OIVGi5sLvg" name="cross table analysis" creationDate="2024-03-19T14:28:21.299+0530">
+  <taggedValue xmi:id="_1oYYQeXOEe62OIVGi5sLvg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_1oYYQuXOEe62OIVGi5sLvg" tag="Author" value="deepak_dm@qlik.com"/>
+  <taggedValue xmi:id="_1oYYQ-XOEe62OIVGi5sLvg" tag="Purpose"/>
+  <taggedValue xmi:id="_1oYYROXOEe62OIVGi5sLvg" tag="Description"/>
+  <taggedValue xmi:id="_1oYYReXOEe62OIVGi5sLvg" tag="Version" value="0.1"/>
+  <context xmi:id="_1oYYRuXOEe62OIVGi5sLvg"/>
+  <results xmi:id="_1oYYR-XOEe62OIVGi5sLvg">
+    <resultMetadata xmi:id="_1oYYSOXOEe62OIVGi5sLvg"/>
+  </results>
+  <parameters xmi:id="_1oYYSeXOEe62OIVGi5sLvg" analysisType="Columns Comparison Analysis"/>
+</dataquality.analysis:Analysis>
