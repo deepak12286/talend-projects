@@ -8,6 +8,14 @@
     "id" : "_tmAtAOW9Ee62OIVGi5sLvg",
     "version" : "Latest",
     "type" : "property"
+  }, {
+    "id" : "_tmAtAOW9Ee62OIVGi5sLvg - crm_customers",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_tmAtAOW9Ee62OIVGi5sLvg - map_city_state",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
